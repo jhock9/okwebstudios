@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Unplugged Retreat</title>
+  <title>Jon Hocker | Web Developer</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -28,94 +28,128 @@
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<!-- add a sticky nav -->
+      <!-- THINGS TO UPDATE
+            - add a logo and nav (like unplugged)
+            - make nav sticky
+            - add hero area? 
+        -->
 
-<body id="homepage">
-    <header>
-        <div class="full-width">                
-            <h1>Jon Hocker</h1>
-            <h2>web developer and designer</h2>
-        </div>
-    </header>
+<body>
+  <header>
+    <div class="content-wrapper">                
+
+      <h1>Jon Hocker</h1>
+      <h2>web developer and designer</h2>
+      <nav>   
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
     
-    <section id="work">                
-        <h3>My Portfolio</h3>
-        <div class="full-width" id="rogue">
-            <div class="half-width">
-                <a href="https://jhock9.github.io/rogue-pickings/" target="_blank">
-                    <img src="img/rogue-pickings.png" id ="rogue-img" alt="Rogue Pickings website" /></a>
-            </div>
-            <div class="half-width">
-                <h4>Rouge Pickings Website</h4>
-                <h5>HTML5 | CSS | Photoshop</h5>
-                <p>Using a Photoshop design comp, I created a single-page static website using HTML and CSS. I later added a menu page to the site via the nav menu, making it a multi-page website.</p>
-            </div>
-        </div>
+  <main>
+    <section id="projects">                
+      <div class="content-wrapper">
+        <h2>Projects</h2>
+        <article> 
+          <figure class="project-image">
+            <a href="https://jhock9.github.io/unplugged/" target="_blank">
+              <img src="img/unplugged.png" alt="Unplugged Retreat Project" /></a>
+          </figure>
+          <div class="project-description">
+            <h3>Unplugged Retreat Project</h3>
+            <h4>HTML5 | CSS</h4>
+            <p>Using a Photoshop design comp, I created a multi-page responsive website using HTML and CSS.</p>
+          </div>
+        </article>
             
-        <div class="full-width" id="jubilee">
-            <div class="half-width">
-                <a href="https://jhock9.github.io/jubilee-austen/" target="_blank">
-                    <img src="img/jubilee-austen.png" id="jubilee-img" alt="Jubilee Austen website" /></a>
-            </div>
-            <div class="half-width">
-                <h4>Jubilee Austen Website</h4>
-                <h5>HTML5 | CSS | Photoshop</h5>
-                <p>For a class project, I coded a static website for a fictional web developer. The objective was to recreate the site from a Photoshop design comp using only HTML and CSS.</p>
-            </div>
-        </div>
-            
-        <div class="full-width" id="holstee"> 
-            <div class="half-width">
-                <a href="https://jhock9.github.io/holstee-manifesto/" target="_blank">
-                    <img src="img/holstee-manifesto.png" id="holstee-img" alt="Holstee Manifesto Project" /></a>
-            </div>
-            <div class="half-width">
-                <h4>Holstee Manifesto Exercise</h4>
-                <h5>HTML5 | CSS</h5>
-                <p>My first coding exercise exploring the use of common HTML & CSS properties like floats and the box model to create my own <a href="https://www.holstee.com/pages/manifesto" target="_blank" id="holstee-link">Holstee Manifesto</a> design.</p>
-            </div>
-        </div>
+        <article>
+          <figure class="project-image">
+            <a href="https://jhock9.github.io/rogue-pickings/" target="_blank">
+              <img src="img/rogue-pickings.png" alt="Rogue Pickings website" /></a>
+          </figure>
+          <div class="project-description">
+            <h3>Rouge Pickings Website</h3>
+            <h4>HTML5 | CSS | Photoshop</h4>
+            <p>Using a Photoshop design comp, I created a single-page static website using HTML and CSS. I later added a menu page to the site via the nav menu, making it a multi-page website.</p>
+          </div>
+        </article>
+                
+        <article>
+          <figure class="project-image">
+            <a href="https://jhock9.github.io/jubilee-austen/" target="_blank">
+              <img src="img/jubilee-austen.png" alt="Jubilee Austen website" /></a>
+          </figure>
+          <div class="project-description">
+            <h3>Jubilee Austen Website</h3>
+            <h4>HTML5 | CSS | Photoshop</h4>
+            <p>For a class project, I coded a static website for a fictional web developer. The objective was to recreate the site from a Photoshop design comp using only HTML and CSS.</p>
+          </div>
+        </article>
+          
+        <article> 
+          <figure class="project-image">
+            <a href="https://jhock9.github.io/holstee-manifesto/" target="_blank">
+              <img src="img/holstee-manifesto.png" alt="Holstee Manifesto Project" /></a>
+          </figure>
+          <div class="project-description">
+            <h3>Holstee Manifesto Exercise</h3>
+            <h4>HTML5 | CSS</h4>
+            <p>My first coding exercise exploring the use of common HTML & CSS properties like floats and the box model to create my own <a href="https://www.holstee.com/pages/manifesto" target="_blank" id="holstee-link">Holstee Manifesto</a> design.</p>
+          </div>
+        </article>
+      </div>
     </section>
-        
+            
     <section id="about">
-        <h3>About Me</h3>
-        <div class="full-width">
-            <div class="half-width">
-                <img src="img/jon-headshot1.jpg" id="headshot" alt="Jon Hocker Headshot" />
-            </div>
-            <div class="half-width">
-                <h4>Let’s build something <span>great</span> together!</h4>
-                <p>I’m an Enneagram 1 who loves to create clean, functional websites that are as easy to navigate as they are beautiful to look at.</p>
-                <p>When I’m not coding I serve as the HR Director at <a href="http://www.blusource.com/" target="_blank" id="blusource-link">Blusource</a> helping our do-good partners support their under-resourced communities. In my free time I chase around my 7 kids with my lovely and beautiful wife Amber.</p>
-            </div>
-        </div>
+      <div class="content-wrapper">
+        <h2>About Me</h2>
+        <article>
+          <figure>
+            <img src="img/jon-headshot1.jpg" id="headshot" alt="Jon Hocker Headshot" />
+          </figure>
+          <div>
+            <h4>Let’s build something <span>great</span> together!</h4>
+            <p>I’m an Enneagram 1 who loves to create clean, functional websites that are as easy to navigate as they are beautiful to look at.</p>
+            <p>If I’m not coding I'm chasing around 7 kids with my lovely and beautiful wife Amber.</p>
+          </div>
+        </article>
+      </div>
     </section>
+  </main>
 
-    <footer id="contact">
-        <h3>Let's Connect</h3>
-        <div class ="full-width">
-            <div class="third-width">
-                <h4>Hire Me</h4>
-                <p>(405) 226-5532<br>
-                <a href="mailto:jon.hocker@gmail.com">jon.hocker@gmail.com</a></p>
-            </div>
-            
-            <div class="third-width" id=social-media-icons>
-                <h4>Follow Me</h4>
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/jonhocker/" target="_blank"><img src="img/linkedin.png" alt="linkedin icon" id=linkedin /></a></li>
-                    <li><a href="https://github.com/jhock9" target="_blank"><img src="img/github.png" alt="github icon" id=github /></a></li>
-                </ul>
-            </div>    
-            
-            <div class="third-width">
-                <h4>Meet Me</h4>
-                <p>let's grab coffee<br>
-                    Edmond / Oklahoma City</p>
-            </div>    
-            <h6>Copyright 2019 | Jon Hocker</h6>
-        </div>   
-    </footer>
+  <footer id="contact">
+    <div class="content-wrapper">
+      <h2>Let's Connect</h2>
+      <div class="footer-content">
+        <div class="contact">
+          <h3>Hire Me</h3>
+          <p>(405) 226-5532<br>
+          <a href="mailto:jon.hocker@gmail.com">jon.hocker@gmail.com</a></p>
+        </div>
+          
+        <div class=social>
+          <h3>Follow Me</h3>
+          <div class="social-icons">
+            <p><a href="https://www.linkedin.com/in/jonhocker/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <p><a href="https://github.com/jhock9" target="_blank"><i class="fab fa-github-square"></i></a></li>
+          </div>
+        </div>    
+        
+        <div class="meetup">
+          <h3>Meet Me</h3>
+          <p>let's grab coffee<br>
+            Edmond / Oklahoma City</p>
+        </div>
+      </div>  
+    </div>
+
+    <div class="copyright">
+      <p>Copyright 2021 | Jon Hocker</p>
+    </div>
+  </footer>
 
   <!-- Add your site or application content here -->
   <script src="../js/vendor/modernizr-3.11.2.min.js"></script>
