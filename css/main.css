@@ -103,6 +103,7 @@ body {
     font-size: 1em;
     color: #ecede0;
     background-color: #ffffff;
+    text-align: left;
 }
 
 .content-wrapper {
@@ -110,20 +111,12 @@ body {
   margin: 50px 0;
 }
 
-h1 {
-  font-family: 'Kraft Nine';
-  font-size: 5em;
-  font-weight: 400;
-  text-align: center;
-}
-
 h2 {
   font-size: 2em;
   font-weight: 400;
   text-align: center;
-  margin: 0 0 40px 0;
+  margin: 0;
 }
-
 
 h3,
 h4 {
@@ -133,17 +126,17 @@ h4 {
 
 h3 {
   font-size: 1.5em;
-  font-weight: 700;
   text-transform: capitalize;
   margin-top: 20px;
 }
 
 h4 {
-  margin: 5px 0 10px 0;
+  font-size: 1em;
 }
 
 p {
   font-size: .875em;
+  margin: 0;
 }
 
 ul, 
@@ -184,71 +177,77 @@ header {
 }
 
 header h1 {
+  font-family: 'Kraft Nine';
+  font-size: 5em;
+  font-weight: 400;
+  text-align: center;
   color: #404c4e;
   text-shadow: 0 0 40px #c5bfa0, 0 0 80px #fffff0;
   letter-spacing: 2px;
-  padding-top: 350px;
   margin: 0;
+  padding: 200px 0 20px 0;
 }
 
-header h2 {
+header p {
+  font-size: 2em;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
   color: #e2e4d8;
   text-shadow: 0 1px 0 #404c4e, 0 2px 0 #404c4e, 0 3px 1px #404c4e, 0 4px 1px #404c4e, 0 5px 3px #404c4e, 0 6px 3px #404c4e;
   -webkit-text-stroke-width: .2px;
   -webkit-text-stroke-color: #404c4e;
   letter-spacing: 1px;
-  margin: 10px 0;
 }
 
 footer {
   background-color: #e2e4d8;
-}
-
-#contact h2, #contact h3, .copyright, #contact p {
   color: #404c4e;
   text-align: center;
-  }
-
-#contact h3 {
-  font-family: 'Raleway', cursive;
-  font-size: 1.375em;
-  font-weight: 400;
-  margin: 25px 0 30px 0;
 }
 
-#contact p {
+footer .content-wrapper {
+  width: 60%;
+}
+
+footer h3 {
+  font-family: 'Raleway', cursive;
+  font-size: 1.375em;
+  font-weight: 700;
+  margin: 30px 0 15px 0;
+}
+
+footer p {
   font-size: 1.125em;
 }
 
-#contact a {
+footer a {
   text-decoration: none;
   color: #404c4e;
 }
 
-#social-media-icons {
-  text-align: center;
-  list-style: none;
-}
-
-#contact ul {
-  padding: 0;
-}
-
-#contact ul li {
+footer .social-icons {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-#contact ul img {
-  font-size: 2em;
-  margin: 0 25px;
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .social-icons p i {
+	font-size: 3em;
 }
 
 footer .copyright {
   font-family: 'Raleway', sans-serif;
   font-size: .875em;
   font-weight: 400;
-  padding: 50px 0 10px 0;
-  margin: 0;
+  margin-bottom: 10px;
+  width: 90%;
 }
 
 /* ==========================================================================
@@ -273,6 +272,11 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  margin: 30px 0 0 0;
+}
+
+#projects figure {
+  width: 100%;
 }
 
 #projects .project-image {
@@ -287,6 +291,7 @@ footer .copyright {
 .project-description h4 {
   color: #bf905d;
   letter-spacing: 1px;
+  margin: 5px 0 15px 0;
 }
 
 #holstee-link {
@@ -297,14 +302,30 @@ footer .copyright {
 
 #about {
   background-color: #4e7c72;
+  color: #ecede0;
+
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+#about article {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin: 30px 0 0 0;
 }
 
 #about figure {
-
+  width: 80%;
 }
 
-#about h2, #about h3, #about p, #blusource-link {
-  color: #ecede0;
+#about h4 {
+  margin: 20px 0 5px 0;
+}
+
+#about p {
+  margin-top: 10px;
 }
 
 #about span {
