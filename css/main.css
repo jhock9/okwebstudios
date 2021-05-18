@@ -256,30 +256,27 @@ footer .copyright {
 
 /* Projects */
 
-#projects,
-#about {
+.projects,
+.about {
   display: flex;
   justify-content: center;
   align-items: center; /*needed?*/
   flex-flow: row wrap;
 }
 
-#projects {
+.projects {
   background-color: #404c4e;
 }
 
-#projects article {
+.projects article {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
   margin: 30px 0 0 0;
 }
 
-#projects figure {
+.projects .project-image {
   width: 100%;
-}
-
-#projects .project-image {
   margin: 0;
 }
 
@@ -296,39 +293,40 @@ footer .copyright {
 
 #holstee-link {
   color: #ecede0;
+  text-decoration: underline;
 }
 
 /* About */
 
-#about {
+.about {
   background-color: #4e7c72;
   color: #ecede0;
-
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
 
-#about article {
+.about article {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
   margin: 30px 0 0 0;
 }
 
-#about figure {
+.about figure {
   width: 80%;
 }
 
-#about h4 {
+.about h4 {
   margin: 20px 0 5px 0;
+  line-height: 22px;
 }
 
-#about p {
+.about p {
   margin-top: 10px;
 }
 
-#about span {
+.about span {
   font-size: 1.5em;
   font-family: 'Shadows Into Light', cursive;
   color: #bf905d;
@@ -436,25 +434,94 @@ footer .copyright {
  /**** TABLET STYLES - Homepage ****/
   
   /* Base Styles */
-
+  .content-wrapper {
+    max-width: 640px;
+  }
 
   /* Header */
+  header h1 {
+    padding-top: 120px;
+  }
 
+  /* Projects */
+  .projects article {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 
-  /* Hero Area */
+  .projects .project-image {
+    width: 60%;
+  }
 
-  
-  /* Aside */
+  .projects .project-description {
+    width: 35%;
+  }
 
+  .projects h3 {
+    margin: 0;
+  }
 
-  /* Features */
-  
+  .projects p {
+    line-height: 22px;
+  }
 
-  /* Reviews */
+  /* About */
+  .about article {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 
+  .about .headshot {
+    width: 40%;
+    order: 2;
+  }
+
+  .about .about-description {
+    width: 55%;
+    order: 1;
+  }
+
+  .about h4 {
+    font-size: 1.25em;
+    margin: 0;
+  }
+
+  .about p {
+    font-size: 1em;
+    margin-top: 20px;
+    line-height: 24px;
+  }
 
   /* Footer */
 
+  footer .content-wrapper {
+    width: 100%;
+  }
+
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+
+  footer .contact,
+  footer .meetup {
+    width: 35%;
+  }
+
+  footer .social {
+    width: 25%;
+  }
+
+  footer h3 {
+    font-size: 1.25em;
+    margin-top: 20px;
+  }
+
+  footer p {
+    font-size: 1em;
+  }
 
   /**** TABLET STYLES - Projects Page ****/
 
@@ -471,17 +538,11 @@ footer .copyright {
   /* Header */
 
 
-  /* Hero Area */
+  /* Projects */
 
 
-  /* Aside */
-
-
-  /* Features */
-
-
-  /* Reviews */
-
+  /* About */
+  
 
   /* Footer */
 
