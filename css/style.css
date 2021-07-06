@@ -14,6 +14,12 @@ html {
   font-size: 62.5%; /* setting default font size to 10px */
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* ----- End of Reset and Common Styles ----- */
 
 /* ----- Section 1 ----- */
@@ -25,9 +31,6 @@ html {
     rgba(255,255,255, .3)), 
     url(../img/bg.jpg) center no-repeat;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 
@@ -40,8 +43,8 @@ html {
   margin-bottom: 5rem;
   text-transform: uppercase;
   letter-spacing: 1rem;
-  border-bottom: .3rem solid #fff;
-  text-shadow: .2rem .2rem 1rem #555;
+  border-bottom: 0.3rem solid #fff;
+  text-shadow: 0.2rem 0.2rem 1rem #555;
   transform: skew(-10deg);
 }
 
@@ -52,7 +55,7 @@ html {
   border-radius: 50%;
   border: .7rem dotted #e41c6f;
   background-color: rgba(255,255,255, .7);
-  padding: .5rem;
+  padding: 0.5rem;
   opacity: .9;
 }
 
@@ -60,9 +63,9 @@ html {
   font-size: 2rem;
   color: #fff;
   background-color: #e41c6f;
-  padding: .5rem 3rem;
+  padding: 0.5rem 3rem;
   margin: 5rem 0;
-  letter-spacing: .3rem;
+  letter-spacing: 0.3rem;
   transform: skew(-10deg);
 }
 
@@ -71,10 +74,49 @@ html {
   font-weight: 700;
   color: #333;
   background-color: #fff;
-  border: .3rem solid #333;
-  padding: .5rem 1rem;
+  border: 0.3rem solid #333;
+  padding: 0.5rem 1rem;
   text-transform: uppercase;
-  letter-spacing: .3rem;
+  letter-spacing: 0.3rem;
+}
+/* ----- End of Section 1 ----- */
+
+/* ----- Navbar ----- */
+.navbar {
+width: 100%;
+height: 4rem;
+background-color: #e41c6f;
+box-shadow: 0.2rem 0.2rem 0.5rem #555;
 }
 
-/* ----- End of Section 1 ----- */
+.navbar-link {
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.navbar-link:hover {
+  color: #fff;
+}
+
+.navbar-link::before { /* psuedo-element to add hover effects */
+  content: "";
+  width: 0;
+  height: 0.2rem;
+  background-color: #fff;
+  position: absolute;
+  right: -15%;
+  bottom: -0.3rem;
+  transition: width 0.2s;
+}
+
+.navbar-link:hover::before { 
+  width: 130%;
+
+}
+/* ----- End of Navbar ----- */
