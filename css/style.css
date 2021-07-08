@@ -127,6 +127,9 @@ box-shadow: 0.2rem 0.2rem 0.5rem #555;
   height: 100%;
   padding: 15rem 0 10rem 0;
   background-color: #fff;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .section-2-heading {
@@ -134,9 +137,47 @@ box-shadow: 0.2rem 0.2rem 0.5rem #555;
   color: #333;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  margin-bottom: 15rem;
+  margin: 0 0 10rem 0;
   border-bottom: 0.3rem solid #333;
   text-shadow: 0.2rem 0.2rem 0.5rem #555;
 }
 
+.about-me-wrapper {
+  /* width: 60rem; /* TODO -- change to % for responsive?*/  */
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+
+}
+
+.about-description {
+  width: 42%;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;  
+}
+
+.dev-icons-wrapper {
+  width: 50%; /* TODO -- change to % for responsive?*/ 
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-list {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-list-item {
+  font-size: 10rem;
+  color: #e41c6f;
+  text-shadow: 0.2rem 0.2rem 0.3rem #555;
+  padding: 0 15%;
+}
 /* ----- End of SEction 2 ----- */
