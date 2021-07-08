@@ -17,68 +17,158 @@
 </head>
 
     <!--TODO -- THINGS TO UPDATE
-        - new hero img 
-        - new favicon
+        - new section-1 background 
+        - new favicon jh logo
     -->
 
 <body>
   <div class="container">
-    <!-- Section 1 -->
-    <section class="section-1 center">
-      <h1 class="section-1-heading">Web Developer</h1>
+    <!-- Hero Section -->
+    <section class="hero-section center">
+      <h1 class="hero-heading">Web Developer</h1>
       <img src="img/jon-headshot2.png" alt="Jon Hocker" class="person-img"/>
       <h3 class="person-name">Jon Hocker</h3>
-      <a href="#" class="section-1-button">Projects</a>
+      <a href="#" class="hero-button">Projects</a>
     </section>
-    <!-- End of Section 1 -->
+    <!-- End of Hero Section -->
+
+    <!-- Navbar -->
+    <nav class="navbar center">
+      <a href="#" class="navbar-link">Home</a> 
+      <a href="#" class="navbar-link">About</a> 
+      <a href="#" class="navbar-link">Portfolio</a> 
+      <a href="#" class="navbar-link">Contact</a> 
+    </nav>  
+    <!-- End of Navbar -->
+
+    <!-- About Me Section -->
+    <section class="about-section center">
+      <h1 class="section-heading">About Me</h1>
+      <div class="about-wrapper">
+        <div class="about-description">
+          <p>Before I transitioned to a life of coding, my &lt;<em>non-tech</em>&gt; career path was built out of service to others through roles in customer service and HR. 
+            Now as a developer, I get to marry those people-oriented skills to create clean, functional websites that are beautiful to look and easy to navigate.</p> 
+          <p>I'm constantly expanding my expertise in how I design and build websites. I'm currently adding ReactJS and Bootstrap to my growing library of skills that includes:
+            HTML5, CSS3, JavaScript, JQuery, Rest APIs, Responsive Web Design, GIT/GitHub, VS Code, Adobe Photoshop, and CodeSandbox.</p>
+        </div>
+
+        <div class="about-description">
+          <p>I’m an Enneagram 1, so I can be a bit of a perfectionist &#128513;; but only because I’ve always looked for ways to improve what’s been in front of me - processes, communication, culture, and now, websites.</p>
+          <p>Outside of the coding life I enjoy playing the guitar and making music, building/tinkering with things, or a fun and possibly over-competitive board game with the family. 
+            Speaking of, I have the pleasure of chasing around seven awesome and rambunctious kiddos with my lovely and all too patient wife Amber.</p>
+          <!-- TODO use this line somewhere else ------ <p>Let’s build something great together!</p> -->
+        </div>
+      </div>
+
+      <div class="dev-icons-wrapper">
+        <ul class="icon-list">
+          <li class="icon-list-item"><i class="fab fa-html5"></i></li>
+          <li class="icon-list-item"><i class="fab fa-css3-alt"></i></li>
+          <li class="icon-list-item"><i class="fab fa-js-square"></i></li>
+          <li class="icon-list-item"><i class="fab fa-github"></i></li>
+          <!-- TODO add these icons --- prob just need to not use fontawesome icons here, img icons instead for all
+          <li><img src="img/" alt="React Icon" class="icon-list-item"/></li> 
+          <li><img src="img/" alt="Bootstrap Icon" class="icon-list-item"/></li> 
+          <li><img src="img/" alt="APIs Icon" class="icon-list-item"/></li> 
+          <li><img src="img/" alt="jQuery Icon" class="icon-list-item"/></li>
+          <li><img src="img/" alt="Responsive Icon" class="icon-list-item"/></li>
+          <li><img src="img/" alt="VS Code Icon" class="icon-list-item"/></li>
+          <li><img src="img/photoshop-icon.png" alt="Photoshop Icon" class="icon-list-item"/></li>
+          <li><img src="img/code-sandbox-icon.png" alt="Code Sandbox Icon" class="icon-list-img"/></li>
+          -->
+        </ul>
+      </div>
+    </section>
+    <!-- End of About Me Section -->
+  
+    <!-- Projects Section -->
+    <section class="projects-section center">
+      <h1 class="section-heading">My Projects</h1>
+      <div class="projects-wrapper center">
+        <div class="project">
+          <div class="project-text">
+            <h2 class="project-name">Retreat Website</h2>
+            <h4 class="project-tech">HTML / CSS</h4>
+          </div>
+          <img src="img/unplugged.png" alt="Unplugged Retreat" class="project-img"/>
+          <a href="https://jhock9.github.io/unplugged-retreat/" target="_blank" class="project-button">Check it out</a>
+        </div>
+
+        <div class="project">
+          <div class="project-text">
+            <h2 class="project-name">Small Biz Website</h2>
+            <h4 class="project-tech">HTML / CSS / Photoshop</h4>
+          </div>
+          <img src="img/rogue-pickings.png" alt="Rogue Pickings Website" class="project-img"/>
+          <a href="https://jhock9.github.io/rogue-pickings/" target="_blank" class="project-button">Check it out</a>
+        </div>
+
+        <div class="project">
+          <div class="project-text">
+            <h2 class="project-name">Freelancer Website</h2>
+            <h4 class="project-tech">HTML / CSS / Photoshop</h4>
+          </div>
+          <img src="img/jubilee-austen.png" alt="Jubilee Austen Website" class="project-img"/>
+          <a href="https://jhock9.github.io/jubilee-austen/" target="_blank" class="project-button">Check it out</a>
+        </div>
+
+        <div class="project">
+          <div class="project-text">
+            <h2 class="project-name">Guessing Game</h2>
+            <h4 class="project-tech">HTML / CSS / JS</h4>
+          </div>
+          <img src="img/guess-the-word.png" alt="Guess the Word" class="project-img"/>
+          <a href="https://jhock9.github.io/guess-the-word/" target="_blank" class="project-button">Check it out</a>
+        </div>
+
+        <div class="project">
+          <div class="project-text">
+            <h2 class="project-name">Magic 8-Ball</h2>
+            <h4 class="project-tech">HTML / CS / JS / jQuery</h4>
+          </div>
+          <img src="img/magic-8-ball.png" alt="Magic 8-Ball" class="project-img"/>
+          <a href="https://jhock9.github.io/magic-8-ball/" target="_blank" class="project-button">Check it out</a>
+        </div>
+
+        <div class="project">
+          <div class="project-text">
+            <h2 class="project-name">Gallery Webpage</h2>
+            <h4 class="project-tech">HTML / CSS / JS / APIs</h4>
+          </div>
+          <img src="img/github-repo-gallery.png" alt="GitHub Repo Gallery" class="project-img"/>
+          <a href="https://jhock9.github.io/github-repo-gallery/" target="_blank" class="project-button">Check it out</a>
+        </div>
+      </div>
+    </section>
+    <!-- End of Projects Section -->
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <h1 class="section-heading">Contact Me</h1>
+      <form class="contact-form">
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="What do you want to create?">
+        <input type="button" value="Let's build something great together!" class"contact-button">
+      </form>
+    </section>
+    <!-- End of Contact Section -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-wrapper">
+        <div class="social-icons">
+        
+        </div>
+
+        <div class="copyright">
+        
+        </div>
+      </div>
+    </footer>
+    <!-- End of Footer -->
+
   </div>
-
-<!-- Navbar -->
-<nav class="navbar center">
-  <a href="#" class="navbar-link">Home</a> 
-  <a href="#" class="navbar-link">About</a> 
-  <a href="#" class="navbar-link">Portfolio</a> 
-  <a href="#" class="navbar-link">Contact</a> 
-</nav>  
-
-<!-- End of Navbar -->
-
-<!-- Section 2 -->
-<section class="section-2">
-  <h1 class="section-2-heading">About Me</h1>
-  <div class="about-me-wrapper">
-    <div class="about-description">
-      <p>Before I transitioned to a life of coding, my &lt;<em>non-tech</em>&gt; career path was built out of service to others through roles in customer service and HR. 
-        Now as a developer, I get to marry those people-oriented skills to create clean, functional websites that are beautiful to look and easy to navigate.</p> 
-      <p>I'm constantly expanding my expertise in how I design and build websites. I'm currently adding ReactJS and Bootstrap to my growing library of skills that includes:
-        HTML5, CSS3, JavaScript, JQuery, Rest APIs, Responsive Web Design, GIT/GitHub, VS Code, Adobe Photoshop, and CodeSandbox.</p>
-    </div>
-    <div class="about-description">
-      <p>I’m an Enneagram 1, so I can be a bit of a perfectionist &#128513;; but only because I’ve always looked for ways to improve what’s been in front of me - processes, communication, culture, and now, websites.</p>
-      <p>Outside of the coding life I enjoy playing the guitar and making music, building/tinkering with things, or a fun and possibly over-competitive board game with the family. 
-        Speaking of, I have the pleasure of chasing around seven awesome and rambunctious kiddos with my lovely and all too patient wife Amber.</p>
-      <!-- TODO use this somewhere else ------ <p>Let’s build something great together!</p> -->
-    </div>
-  </div>
-  <div class="dev-icons-wrapper">
-    <ul class="icon-list">
-      <li class="icon-list-item"><i class="fab fa-html5"></i></li>
-      <li class="icon-list-item"><i class="fab fa-css3-alt"></i></li>
-      <li class="icon-list-item"><i class="fab fa-js-square"></i></li>
-      <li class="icon-list-item"><i class="fab fa-github"></i></li>
-      <!-- <li><img src="img/" alt="React Icon" class="icon-list-item"/></li> -->
-      <!-- <li><img src="img/" alt="Bootstrap Icon" class="icon-list-item"/></li> -->
-      <!-- <li><img src="img/" alt="APIs Icon" class="icon-list-item"/></li> -->
-      <!-- <li><img src="img/" alt="jQuery Icon" class="icon-list-item"/></li> -->
-      <!-- <li><img src="img/" alt="Responsive Icon" class="icon-list-item"/></li> -->
-      <!-- <li><img src="img/" alt="VS Code Icon" class="icon-list-item"/></li> -->
-      <!-- <li><img src="img/photoshop-icon.png" alt="Photoshop Icon" class="icon-list-item"/></li> -->
-      <!-- <li><img src="img/code-sandbox-icon.png" alt="Code Sandbox Icon" class="icon-list-img"/></li> -->
-    </ul>
-  </div>
-</section>
-<!-- End of Section 2 -->
-
   <script src="script.js"></script>
 </body>
 </html>
