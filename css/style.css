@@ -100,6 +100,7 @@ box-shadow: 0.2rem 0.2rem 0.5rem #555;
 position: -webkit-sticky;
 position: sticky;
 top: 0;
+z-index: 15;
 }
 
 .navbar-link {
@@ -159,6 +160,17 @@ top: 0;
 
 .about-description p {
   margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.about-description span {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #e41c6f;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: .5rem;
+  text-shadow: 0.1rem 0.1rem 0.2rem #777;
 }
 
 .dev-icons-wrapper {
@@ -268,20 +280,88 @@ transition: box-shadow 0.5s;
   transition: bottom 0.3s 0.3s;
 }
 /* ----- End of Projects Section ----- */
+
+/* ----- Contact Section ----- */
 .contact-section {
   width: 100%;
-  height: 200vh;
+  height: 100%;
+  padding: 5rem 0;
   background-color: #333;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
 }
 
-/* ----- Contact Section ----- */
+.contact-section .section-heading {
+  color: #fff;
+  border-color: #fff;
+  text-shadow: none;
+}
 
+.contact-form {
+  width: 50rem;
+  flex-direction: column;
+}
+
+.contact-form input, 
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  background-color: #eef;
+  border: 0.2rem solid #e41c6f;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.contact-form textarea {
+min-height: 15rem;
+max-width: 100%;
+min-width: 100%;
+}
+
+.contact-form .contact-button {
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #e41c6f;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  cursor: pointer;
+}
 /* ----- End of Contact Section ----- */
 
 /* ----- Footer Section ----- */
+.footer-wrapper {
+  width: 100%;
+  height: 30vh;
+  background: #222;
+  flex-direction: column;
+}
 
+.social-media {
+  margin-bottom: 5rem;
+}
+
+.social-icon {
+  border-radius: .5rem;
+  background-color: #e41c6f;
+  margin: 0 2rem;
+  padding: .7rem;
+  display: inline-block;
+}
+
+.social-icon i {
+font-size: 4rem;
+color: #fff;
+}
+
+.copyright {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
 /* ----- End of Footer Section ----- */
