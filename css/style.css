@@ -1,3 +1,7 @@
+/* TODO --- THINGS TO UPDATE
+- make hero heading two lines, larger font 
+*/
+
 /* ----- Reset and Common Styles ----- */
 *{
   margin: 0;
@@ -56,7 +60,7 @@ section {
 }
 
 .hero-heading {
-  font-size: 6rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: #fff;
   background-color: #e41c6f;
@@ -91,11 +95,11 @@ section {
 }
 
 .hero-button {
-  font-size: 1.7rem;
+  font-size: 2.2rem;
   font-weight: 700;
   color: #333;
   background-color: #fff;
-  border: 0.3rem solid #333;
+  border: .5rem solid #333;
   padding: 0.5rem 1rem;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
@@ -117,7 +121,7 @@ z-index: 15;
   font-size: 1.7rem;
   font-weight: 600;
   color: #333;
-  margin: 0 3rem;
+  margin: 0 1.5rem;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   position: relative;
@@ -153,10 +157,6 @@ z-index: 15;
 /* ----- End of Navbar ----- */
 
 /* ----- About Section ----- */
-.about-section {
-  padding-top: 15rem;
-}
-
 .about-wrapper {
   width: 90%;
   display: flex;
@@ -165,22 +165,23 @@ z-index: 15;
 }
 
 .about-description {
-  width: 42%;
-  font-size: 2rem;
+  width: 90%;
+  font-size: 2.3rem;
   color: #333;
   display: flex;
   flex-direction: column;  
 }
 
 .about-description p {
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
   text-align: justify;
 }
 
-.about-description span {
-  font-size: 1.5rem;
+.about-description .about-tag {
+  font-size: 2rem;
   font-weight: 500;
   color: #e41c6f;
+  text-align: center;
   text-transform: uppercase;
   font-style: italic;
   letter-spacing: .5rem;
@@ -189,19 +190,13 @@ z-index: 15;
 
 .dev-icons-wrapper {
   width: 50%;
-  height: 30vh;
-
-}
-
-.icon-list {
-  display: flex;
-  justify-content: center;
+  height: 100%;
 }
 
 .icon-list-item {
-  font-size: 10rem;
+  font-size: 5rem;
   color: #e41c6f;
-  text-shadow: 0.2rem 0.2rem 0.3rem #555;
+  text-shadow: 0.1rem 0.1rem 0.15rem #555;
   padding: 0 15%;
 }
 /* ----- End of About Section ----- */
@@ -292,7 +287,7 @@ transition: box-shadow 0.5s;
 
 /* ----- Contact Section ----- */
 .contact-section {
-  padding: 5rem 0;
+  height: 90vh;
   background-color: #333;
   justify-content: space-evenly;
 }
@@ -304,7 +299,8 @@ transition: box-shadow 0.5s;
 }
 
 .contact-form {
-  width: 50rem;
+  width: 80%;
+  max-width: 50rem;
   flex-direction: column;
 }
 
@@ -378,12 +374,89 @@ color: #fff;
 @media screen and (min-width: 768px) {
   /**** TABLET STYLES - Homepage ****/
   
-}
+  html {
+    font-size: 62.5%; /* setting default font size to 10px */
+  }
+
+  .hero-heading {
+    font-size: 5rem;
+  }
+
+  .person-name {
+    font-size: 3rem;
+  }
+
+  .navbar-link {
+    margin: 0 3rem;
+  }
+
+  .about-description {
+    font-size: 1.8rem;
+  }
+
+  .about-description .about-tag {
+    font-size: 1.5rem;
+  }
+
+  .icon-list-item {
+    font-size: 6rem;
+    text-shadow: 0.2rem 0.2rem 0.3rem #555;
+  }
+    
+  .project {
+  width: 47%;
+  }
+
 
 @media screen and (min-width: 1200px) {
   /**** DESKTOP STYLES - Homepage ****/
 
-  html {
-    font-size: 62.5%; /* setting default font size to 10px */
+  .hero-heading {
+    font-size: 6rem;
   }
-}   
+  
+  .person-name {
+    font-size: 2rem;
+  }
+
+  .hero-button {
+    font-size: 1.7rem;
+    border: 0.3rem solid #333;
+  }
+
+  .about-section {
+    padding-top: 15rem;
+  }
+
+  .about-description {
+    width: 42%;
+    font-size: 2rem;
+  }
+
+  .about-description p {
+    margin-bottom: 2rem;
+  }
+
+  .about-description .about-tag {
+    font-size: 1.5rem;
+    text-align: left;
+    line-height: 2rem;
+  }
+  
+  .dev-icons-wrapper {
+    height: 30vh;
+  }
+  
+  .icon-list-item {
+    font-size: 10rem;
+  }
+
+  .project {
+    width: auto;
+  }
+
+  .contact-section {
+    height: 100%;
+    padding: 5rem 0;
+  }
+}
