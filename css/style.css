@@ -11,7 +11,7 @@
 }
 
 html {
-  font-size: 62.5%; /* setting default font size to 10px */
+  font-size: 50%; /* setting default font size to 8px */
   scroll-behavior: smooth;
 }
 
@@ -19,6 +19,14 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  padding: 10rem 0;
+  background-color: #fff;
+  flex-direction: column;
 }
 
 .section-heading {
@@ -33,16 +41,18 @@ html {
 
 /* ----- End of Reset and Common Styles ----- */
 
+/* ==========================================================================
+  Mobile Styles
+  ========================================================================== */
+
 /* ----- Hero Section ----- */
 .hero-section {
-  width: 100%;
   height: 100vh;
   background: linear-gradient(
     rgba(255,255,255, .2),
     rgba(255,255,255, .3)), 
     url(../img/bg.jpg) center no-repeat;
   background-size: cover;
-  flex-direction: column;
 }
 
 .hero-heading {
@@ -144,11 +154,7 @@ z-index: 15;
 
 /* ----- About Section ----- */
 .about-section {
-  width: 100%;
-  height: 100%;
-  padding: 15rem 0 10rem 0;
-  background-color: #fff;
-  flex-direction: column;
+  padding-top: 15rem;
 }
 
 .about-wrapper {
@@ -184,9 +190,7 @@ z-index: 15;
 .dev-icons-wrapper {
   width: 50%;
   height: 30vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
 }
 
 .icon-list {
@@ -204,9 +208,6 @@ z-index: 15;
 
 /* ----- Projects Section ----- */
 .projects-section {
-  width: 100%;
-  height: 100%;
-  padding: 10rem 0;
   background-color: #eef;
   flex-direction: column;
 }
@@ -291,14 +292,9 @@ transition: box-shadow 0.5s;
 
 /* ----- Contact Section ----- */
 .contact-section {
-  width: 100%;
-  height: 100%;
   padding: 5rem 0;
   background-color: #333;
-  display: flex;
   justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column;
 }
 
 .contact-section .section-heading {
@@ -373,3 +369,21 @@ color: #fff;
   text-align: center;
 }
 /* ----- End of Footer Section ----- */
+
+
+/* ==========================================================================
+  Media Queries for Responsive Design
+  ========================================================================== */
+  
+@media screen and (min-width: 768px) {
+  /**** TABLET STYLES - Homepage ****/
+  
+}
+
+@media screen and (min-width: 1200px) {
+  /**** DESKTOP STYLES - Homepage ****/
+
+  html {
+    font-size: 62.5%; /* setting default font size to 10px */
+  }
+}   
