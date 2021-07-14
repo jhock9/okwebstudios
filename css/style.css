@@ -53,6 +53,7 @@ section {
 
 /* ----- Hero Section ----- */
 .hero-section {
+  height: 100vh;
   background: linear-gradient(
     rgba(255,255,255, .2),
     rgba(255,255,255, .3)), 
@@ -382,6 +383,15 @@ color: #fff;
   
 @media screen and (max-width: 360px) {
   /**** SMALL MOBILE STYLES ****/
+
+  .hero-section {
+    height: initial;
+  }  
+
+  .section-heading {
+    font-size: 4rem;
+  } 
+
   .navbar {
     flex-direction: column;
   }
@@ -401,6 +411,10 @@ color: #fff;
   html {
     font-size: 62.5%; /* setting default font size to 10px */
   }
+
+  .hero-section {
+    height: initial;
+  }  
 
   .hero-heading {
     font-size: 5rem;
