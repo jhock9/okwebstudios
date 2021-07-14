@@ -1,5 +1,4 @@
 /* TODO --- THINGS TO UPDATE
--- fix responsive on scaling (small mobile)
 - make submit form work
 */
 
@@ -31,8 +30,6 @@ html {
 }
 
 section {
-  width: 100%;
-  height: 100%;
   padding: 10rem 0;
   background-color: #fff;
   flex-direction: column;
@@ -56,7 +53,6 @@ section {
 
 /* ----- Hero Section ----- */
 .hero-section {
-  height: 100%;
   background: linear-gradient(
     rgba(255,255,255, .2),
     rgba(255,255,255, .3)), 
@@ -65,7 +61,7 @@ section {
 }
 
 .hero-heading {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 700;
   color: #fff;
   background-color: #e41c6f;
@@ -122,16 +118,17 @@ section {
 /* ----- Navbar ----- */
 .navbar {
 width: 100%;
-height: 4rem;
+padding: 1rem 0;
 background-color: #e41c6f;
 box-shadow: 0.2rem 0.2rem 0.5rem #555;
 position: sticky;
 top: 0;
 z-index: 15;
+/* flex-direction: column; */
 }
 
 .navbar-link {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: #333;
   margin: 0 1.5rem;
@@ -203,7 +200,6 @@ z-index: 15;
 
 .dev-icons-wrapper {
   width: 50%;
-  height: 100%;
 }
 
 .icon-list-item {
@@ -300,6 +296,7 @@ transition: box-shadow 0.5s;
 
 /* ----- Contact Section ----- */
 .contact-section {
+  padding: 15rem 0;
   background-color: #333;
   justify-content: space-evenly;
 }
@@ -328,7 +325,7 @@ transition: box-shadow 0.5s;
 }
 
 .contact-form textarea {
-min-height: 15rem;
+min-height: 25rem;
 max-width: 100%;
 min-width: 100%;
 }
@@ -346,7 +343,7 @@ min-width: 100%;
 /* ----- Footer Section ----- */
 .footer-wrapper {
   width: 100%;
-  padding: 5rem 0;
+  padding: 10rem 0;
   background: #222;
   flex-direction: column;
 }
@@ -383,8 +380,23 @@ color: #fff;
   Media Queries for Responsive Design
   ========================================================================== */
   
+@media screen and (max-width: 360px) {
+  /**** SMALL MOBILE STYLES ****/
+  .navbar {
+    flex-direction: column;
+  }
+      
+  .navbar-link {
+      padding: .5rem;
+  }
+
+  .navbar-link::before {
+    bottom: 0.3rem;
+  } 
+}
+
 @media screen and (min-width: 768px) {
-  /**** TABLET STYLES - Homepage ****/
+  /**** TABLET STYLES ****/
   
   html {
     font-size: 62.5%; /* setting default font size to 10px */
@@ -408,11 +420,20 @@ color: #fff;
   }
 
   .navbar-link {
+    font-size: 1.7rem;
     margin: 0 3rem;
+  }
+
+  .about-wrapper {
+    margin-bottom: 3rem;
   }
 
   .about-description {
     font-size: 1.8rem;
+  }
+  
+  .about-description p {
+    margin-bottom: 3rem;
   }
 
   .about-description .about-tag {
@@ -428,9 +449,16 @@ color: #fff;
   width: 47%;
   }
 
+.contact-section {
+  padding: 10rem 0;
+}
+
+  .footer-wrapper {
+    padding: 5rem 0;
+  }
 
 @media screen and (min-width: 1200px) {
-  /**** DESKTOP STYLES - Homepage ****/
+  /**** DESKTOP STYLES ****/
 
 .hero-section {
   height: 100vh;
@@ -449,6 +477,10 @@ color: #fff;
     padding-top: 15rem;
   }
 
+.about-wrapper {
+  margin-bottom: 5rem;
+}
+
   .about-description {
     width: 42%;
     font-size: 2rem;
@@ -464,20 +496,11 @@ color: #fff;
     line-height: 2rem;
   }
   
-  .dev-icons-wrapper {
-    /* height: 20vh; */
-  }
-  
   .icon-list-item {
     font-size: 10rem;
   }
 
   .project {
     width: auto;
-  }
-
-  .contact-section {
-    height: 100%;
-    padding: 5rem 0;
   }
 }
