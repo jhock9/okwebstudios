@@ -148,10 +148,11 @@
     <!-- Contact Section -->
     <section class="contact-section center" id="section-4">
       <h2 class="section-heading">Contact Me</h2>
-      <form class="contact-form center">
-        <input type="text" placeholder="Name">
-        <input type="email" placeholder="Email">
-        <textarea placeholder="What do you want to create?"></textarea>
+      <form class="contact-form center" method="post" action="contact-form.php">
+        <input type="text" name="name" id="name" placeholder="Name" required>
+        <input type="email" name="email" id="email" placeholder="Email" required>
+        <input type="tel" name="telephone" id="number" placeholder="Phone Number" required>
+        <textarea name="message" id="message" placeholder="What do you want to create?" required></textarea>
         <input type="submit" value="Submit" class="contact-button">
       </form>
     </section>
