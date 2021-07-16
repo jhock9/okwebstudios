@@ -349,7 +349,7 @@ min-width: 100%;
 /* ----- Footer Section ----- */
 .footer-wrapper {
   width: 100%;
-  padding: 10rem 0;
+  padding: 5rem 0;
   background: #222;
   flex-direction: column;
 }
@@ -378,7 +378,13 @@ color: #fff;
   text-transform: capitalize;
   letter-spacing: 0.2rem;
   text-align: center;
+  margin-bottom: 2rem;
 }
+
+.logo {
+  width: 5rem;
+}
+
 /* ----- End of Footer Section ----- */
 
 /* ----- Thank You Page ----- */
