@@ -148,12 +148,13 @@
     <!-- Contact Section -->
     <section class="contact-section center" id="section-4">
       <h2 class="section-heading">Contact Me</h2>
-      <form class="contact-form center" name="Form" id="Form" action="index.html" method="post" action="php/contact-form2.php">
-        <input type="text" name="name" id="name" placeholder="Name" required>
-        <input type="email" name="email" id="email" placeholder="Email" required>
-        <input type="tel" name="tel" id="tel" placeholder="Phone Number">
-        <textarea name="message" id="message" placeholder="What do you want to create?" required></textarea>
-        <input type="submit" name="submit" class="contact-button" value="Submit">
+      <script type="text/javascript">var submitted=false;</script>
+      <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='thankyou.html';}"></iframe>
+      <form class="contact-form center" name="Form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc-_N3P6lvYLJgmiYRAb5ZHRrLGqKEKs8ht4T2uVwHEtTSbuA/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+        <input type="text" name="entry.2005620554" placeholder="Name" required>
+        <input type="email" name="entry.1045781291" placeholder="Email" required>
+        <textarea name="entry.839337160" placeholder="What do you want to create?" required></textarea>
+        <input type="submit" class="contact-button" value="Send">
       </form>
     </section>
     <!-- End of Contact Section -->
