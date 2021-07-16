@@ -301,7 +301,6 @@ transition: box-shadow 0.5s;
 
 /* ----- Contact Section ----- */
 .contact-section {
-  padding: 15rem 0;
   background-color: #333;
   justify-content: space-evenly;
 }
@@ -322,10 +321,10 @@ transition: box-shadow 0.5s;
 .contact-form textarea {
   width: 100%;
   padding: 0.5rem;
-  margin: 0.5rem 0;
+  margin: 0.8rem 0;
   background-color: #eef;
   border: 0.2rem solid #e41c6f;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #555;
 }
 
@@ -498,6 +497,12 @@ color: #fff;
     padding: 10rem 0;
   }
 
+  .contact-form input, 
+  .contact-form textarea {
+    margin: 0.5rem 0;
+    font-size: 1.8rem;
+  }
+
   .footer-wrapper {
     padding: 5rem 0;
   }
@@ -522,10 +527,6 @@ color: #fff;
   .hero-button {
     font-size: 1.7rem;
     border: 0.3rem solid #333;
-  }
-
-  .about-section {
-    padding-top: 15rem;
   }
 
   .about-wrapper {
@@ -555,10 +556,14 @@ color: #fff;
     width: auto;
   }
 
+  .contact-form input, 
+  .contact-form textarea {
+    font-size: 1.5rem;
+  }
+
   .thanks-section {
     padding-top: 5rem;
   }
-
 
   .thanks-wrapper {
   justify-content: space-around;
