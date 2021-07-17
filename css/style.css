@@ -32,7 +32,7 @@ section {
 }
 
 .section-heading {
-  font-size: 5rem;
+  font-size: 4rem;
   color: #333;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
@@ -59,7 +59,7 @@ section {
 
 .hero-heading,
 .thanks-heading {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 700;
   color: #fff;
   background-color: #e41c6f;
@@ -202,16 +202,25 @@ z-index: 15;
   letter-spacing: .5rem;
   text-shadow: 0.1rem 0.1rem 0.2rem #777;
 }
-
 .dev-icons-wrapper {
-  width: 50%;
+  width: 90%;
+  /* height: 30vh; */
+  flex-flow: row wrap;
 }
 
-.icon-list-item {
+.dev-icon {
+  padding: 1rem 3rem;
   font-size: 5rem;
   color: #e41c6f;
   text-shadow: 0.1rem 0.1rem 0.15rem #555;
-  padding: 0 15%;
+}
+
+.dev-img {
+  padding: 1rem 3rem;
+}
+
+.dev-img img {
+  width: 4.8rem;
 }
 /* ----- End of About Section ----- */
 
@@ -417,10 +426,6 @@ color: #fff;
     height: initial;
   }  
 
-  .section-heading {
-    font-size: 4rem;
-  } 
-
   .navbar {
     flex-direction: column;
   }
@@ -440,6 +445,9 @@ color: #fff;
   html {
     font-size: 62.5%; /* setting default font size to 10px */
   }
+  .section-heading {
+    font-size: 5rem;
+  } 
 
   .hero-section {
     height: initial;
