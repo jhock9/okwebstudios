@@ -206,14 +206,10 @@ z-index: 15;
 .dev-icons-wrapper {
   width: 90%;
   flex-flow: row wrap;
-  justify-content: space-around;
 }
 
 .dev-icon {
   padding: 0 3rem;
-  background-color: green;
-  padding: .7rem;
-
 }
 
 .dev-icon i {
