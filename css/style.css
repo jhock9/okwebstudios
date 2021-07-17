@@ -205,24 +205,44 @@ z-index: 15;
 
 .dev-icons-wrapper {
   width: 90%;
-  /* height: 30vh; */
   flex-flow: row wrap;
+  justify-content: space-around;
 }
 
 .dev-icon {
   padding: 0 3rem;
+  background-color: green;
+  padding: .7rem;
+
+}
+
+.dev-icon i {
   font-size: 5rem;
   color: #e41c6f;
   text-shadow: 0.1rem 0.1rem 0.15rem #555;
 }
 
-.dev-img {
+.social-icon {
+  border-radius: .5rem;
+  background-color: #e41c6f;
+  margin: 0 2rem;
+  padding: .7rem;
+  display: inline-block;
+}
+
+.social-icon i {
+font-size: 4rem;
+color: #fff;
+}
+
+/* .dev-img {
   padding: 1rem 3rem;
 }
 
 .dev-img img {
   width: 4.8rem;
-}
+} */
+
 /* ----- End of About Section ----- */
 
 /* ----- Projects Section ----- */
