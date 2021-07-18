@@ -208,36 +208,24 @@ z-index: 15;
   flex-flow: row wrap;
 }
 
-.dev-icon {
-  padding: 0 3rem;
+.dev-icon,
+.dev-img {
+  max-width: 4rem;
+  padding: 0 2rem;
+  margin: 2rem 3rem;
+  display: flex;
+  justify-content: center;
 }
 
 .dev-icon i {
   font-size: 5rem;
   color: #e41c6f;
-  text-shadow: 0.1rem 0.1rem 0.15rem #555;
-}
-
-.social-icon {
-  border-radius: .5rem;
-  background-color: #e41c6f;
-  margin: 0 2rem;
-  padding: .7rem;
-  display: inline-block;
-}
-
-.social-icon i {
-font-size: 4rem;
-color: #fff;
-}
-
-/* .dev-img {
-  padding: 1rem 3rem;
+  /* text-shadow: 0.1rem 0.1rem 0.15rem #555; */
 }
 
 .dev-img img {
-  width: 4.8rem;
-} */
+  width: 4.5rem;
+}
 
 /* ----- End of About Section ----- */
 
@@ -443,6 +431,10 @@ color: #fff;
     height: initial;
   }  
 
+  .hero-heading {
+    font-size: 3rem;
+  }
+
   .navbar {
     flex-direction: column;
   }
@@ -508,15 +500,13 @@ color: #fff;
   .about-description .about-tag {
     font-size: 1.5rem;
   }
-
-  .dev-icon {
-    padding: 0 3rem;
+  
+  .dev-icon i {
     font-size: 6rem;
-    text-shadow: 0.2rem 0.2rem 0.3rem #555;
   }
   
   .dev-img img {
-    width: 5.8rem;
+    width: 5.3rem;
   }
 
   .project {
@@ -578,12 +568,20 @@ color: #fff;
     line-height: 2rem;
   }
   
-  .dev-icon {
+
+  .dev-icon,
+  .dev-img {
+    max-width: 10rem;
+    padding: 0 3rem;
+    margin: 2rem 3rem;
+  }
+
+  .dev-icon i {
     font-size: 10rem;
   }
   
   .dev-img img {
-    width: 9.5rem;
+    width: 9rem;
   }
 
   .project {
