@@ -53,7 +53,7 @@ section {
   background: linear-gradient(
     rgba(255,255,255, .2),
     rgba(255,255,255, .3)), 
-    url(../img/bg.jpg) center no-repeat;
+    url(../img/bg.png) center no-repeat;
   background-size: cover;
 }
 
@@ -62,7 +62,7 @@ section {
   font-size: 3.5rem;
   font-weight: 700;
   color: #fff;
-  background-color: #e41c6f;
+  background-color: #15B3A6;
   padding: 0 3rem;
   margin: 0 0 5rem 0;
   text-transform: uppercase;
@@ -90,16 +90,16 @@ section {
   height: 25rem;
   object-fit: cover;
   border-radius: 50%;
-  border: .7rem dotted #e41c6f;
+  border: .7rem dotted #15b3a6;
   background-color: rgba(255,255,255, .7);
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
   opacity: .9;
 }
 
 .person-name {
   font-size: 2rem;
   color: #fff;
-  background-color: #e41c6f;
+  background-color: #15B3A6;
   padding: 0.5rem 3rem;
   margin: 5rem 0;
   letter-spacing: 0.3rem;
@@ -124,7 +124,7 @@ section {
 .navbar {
 width: 100%;
 padding: 1rem 0;
-background-color: #e41c6f;
+background-color: #15B3A6;
 box-shadow: 0.2rem 0.2rem 0.5rem #555;
 position: sticky;
 top: 0;
@@ -194,13 +194,13 @@ z-index: 15;
 
 .about-description .about-tag {
   font-size: 2rem;
-  font-weight: 500;
-  color: #e41c6f;
+  font-weight: 600;
+  color: #15B3A6;
   text-align: center;
   text-transform: uppercase;
   font-style: italic;
   letter-spacing: .5rem;
-  text-shadow: 0.1rem 0.1rem 0.2rem #777;
+  text-shadow: 0.1rem 0.1rem 0.05rem #999;
 }
 
 .dev-icons-wrapper {
@@ -219,11 +219,11 @@ z-index: 15;
 
 .dev-icon i {
   font-size: 5rem;
-  color: #e41c6f;
+  color: #15B3A6;
   /* text-shadow: 0.1rem 0.1rem 0.15rem #555; */
 }
 
-.dev-img img {
+.icon-item {
   width: 4.5rem;
 }
 
@@ -279,7 +279,8 @@ transition: box-shadow 0.5s;
 
 .project-tech {
   font-size: 1.8rem;
-  color: #e41c6f;
+  font-weight: 500;
+  color: #15B3A6;
 }
 
 .project-img {
@@ -302,7 +303,7 @@ transition: box-shadow 0.5s;
   text-transform: capitalize;
   padding: 0 1rem;
   background-color: #fff;
-  border: .3rem solid #e41c6f;
+  border: .3rem solid #15B3A6;
   position: absolute;
   bottom: -5rem;
 }
@@ -337,7 +338,7 @@ transition: box-shadow 0.5s;
   padding: 0.5rem;
   margin: 0.8rem 0;
   background-color: #eef;
-  border: 0.2rem solid #e41c6f;
+  border: 0.2rem solid #15B3A6;
   font-size: 2rem;
   color: #555;
 }
@@ -352,7 +353,7 @@ min-width: 100%;
 .thank-you-button {
   font-size: 1.5rem;
   color: #fff;
-  background-color: #e41c6f;
+  background-color: #15B3A6;
   text-transform: uppercase;
   letter-spacing: 1rem;
   cursor: pointer;
@@ -373,7 +374,7 @@ min-width: 100%;
 
 .social-icon {
   border-radius: .5rem;
-  background-color: #e41c6f;
+  background-color: #15B3A6;
   margin: 0 2rem;
   padding: .7rem;
   display: inline-block;
@@ -505,7 +506,7 @@ color: #fff;
     font-size: 6rem;
   }
   
-  .dev-img img {
+  .icon-item {
     width: 5.3rem;
   }
 
@@ -580,7 +581,7 @@ color: #fff;
     font-size: 10rem;
   }
   
-  .dev-img img {
+  .icon-item {
     width: 9rem;
   }
 
