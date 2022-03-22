@@ -349,6 +349,20 @@ max-width: 100%;
 min-width: 100%;
 }
 
+.captcha {
+  position: relative;
+}
+.captcha-fake-field {
+  background: transparent;
+  bottom: 0;
+  border: none;
+  display: block;
+  height: 1px;
+  left: 12px;
+  width: 1px;
+  position: absolute;
+  z-index: -1;
+}
 
 .contact-form .contact-button,
 .thank-you-button {

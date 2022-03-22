@@ -206,7 +206,11 @@
 
         <form action="?" method="POST">
           <br/>
-          <div class="g-recaptcha" data-sitekey="6LcpngEfAAAAAGWQtghgjaehsCqSJsvsAvPBTMK-"></div>
+          <!-- <div class="g-recaptcha" data-sitekey="6LcpngEfAAAAAGWQtghgjaehsCqSJsvsAvPBTMK-"></div> -->
+          <div class="captcha">
+            <div class="g-recaptcha" data-sitekey="6LcpngEfAAAAAGWQtghgjaehsCqSJsvsAvPBTMK-" data-callback="removeFakeCaptcha"></div>
+            <input type="checkbox" class="captcha-fake-field" tabindex="-1" required>
+         </div>
           <br/>
         <input type="submit" class="contact-button" value="send">
         </form>

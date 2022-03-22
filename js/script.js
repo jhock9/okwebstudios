@@ -29,6 +29,10 @@ const mainFunction = () => {
 
 mainFunction ();
 
+window.removeFakeCaptcha = function() {
+  document.querySelector('.captcha-fake-field').remove();
+}
+
 // window.addEventListener('resize' ()=> {
 //   window.location.reload();
 // });
