@@ -356,7 +356,7 @@ min-width: 100%;
   background: transparent;
   bottom: 0;
   border: none;
-  display: block;
+  display: hide;
   height: 1px;
   left: 12px;
   width: 1px;
