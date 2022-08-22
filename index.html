@@ -203,15 +203,9 @@
         <input type="text" name="entry.2005620554" placeholder="Name" required>
         <input type="email" name="entry.1045781291" placeholder="Email" required>
         <textarea name="entry.839337160" placeholder="What do you want to create?" required></textarea>
-
-        <form action="?" method="POST">
-          <br/>
-          <!-- <div class="g-recaptcha" data-sitekey="6LcpngEfAAAAAGWQtghgjaehsCqSJsvsAvPBTMK-"></div> -->
-          <div class="captcha">
-            <div class="g-recaptcha" data-sitekey="6LcpngEfAAAAAGWQtghgjaehsCqSJsvsAvPBTMK-" data-callback="removeFakeCaptcha"></div>
-            <input type="checkbox" class="captcha-fake-field" tabindex="-1" required>
-         </div>
-          <br/>
+        <!--fields to combat bots-->
+        <label class="bot">Let me know you're a real human and not a robot by answering this simple question.</label>
+        <input name="entry.1100990297" placeholder="A panda is black and _____?" required></input>
         <input type="submit" class="contact-button" value="send">
         </form>
 
