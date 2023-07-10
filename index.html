@@ -10,10 +10,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 
-<!-- FontAwesome Icons -->
-<script src="https://kit.fontawesome.com/18723e8048.js" crossorigin="anonymous"></script>
-
-<!-- Fonts -->
+  <script src="https://kit.fontawesome.com/18723e8048.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
 </head>
 
@@ -26,7 +23,6 @@
       <h1 class="hero-heading" id="mobile-bottom">Developer</h1>
       <img src="img/jon-headshot.png" alt="Jon Hocker" class="person-img"/>
       <h5 class="person-name">Jon Hocker</h5>
-      <a href="#section-3" class="hero-button">Projects</a>
     </section>
     <!-- End of Hero Section -->
 
@@ -34,7 +30,7 @@
     <nav class="navbar center">
       <a href="#section-1" class="navbar-link">Home</a> 
       <a href="#section-2" class="navbar-link">About</a> 
-      <a href="#section-3" class="navbar-link">Portfolio</a> 
+      <a href="#section-3" class="navbar-link">Projects</a> 
       <a href="#section-4" class="navbar-link">Contact</a> 
     </nav>  
     <!-- End of Navbar -->
@@ -42,23 +38,30 @@
     <!-- About Me Section -->
     <section class="about-section center" id="section-2">
       <h2 class="section-heading">About Me</h2>
+      
       <div class="about-wrapper">
         <div class="about-description">
-          <p>Before I transitioned to a life of coding, my &lt;<em>non-tech</em>&gt; career path was built out of service to others through roles in customer service and HR. 
-            Now as a developer, I get to marry those people-oriented skills to create clean, functional websites that are beautiful to look at and easy to navigate.</p> 
-          <p>I'm constantly expanding my expertise in how I design and build websites. My ever-growing library of skills includes:
-            HTML5, CSS3, JavaScript, JQuery, Rest APIs, GIT/GitHub, Mobile and Responsive Web Design, Visual Studio Code, Adobe Photoshop, and CodeSandbox.</p>
-        </div>
+          <p>
+            Before I found my way into web development, my career path centered around serving others in customer service and HR roles. 
+            As a developer, I now blend my people-oriented skills with my passion for creating clean, functional, and visually captivating websites. 
+            Driven by my Enneagram 1 personality, I bring a keen eye for detail and always seek to enhance processes, communication, and the overall user experience.
+          </p> 
+          <p>
+            My expertise in website design and development continues to expand, with a focus on leveraging the MERN stack (MongoDB, Express.js, React, Node.js). 
+            Along with a diverse set of skills and tools, I create captivating websites and interactive web apps that deliver amazing user experiences.
+          </p>
+        <!-- </div>
 
-        <div class="about-description">
-          <p>I’m an Enneagram 1, so I can be a bit of a perfectionist &#128513;; but only because I’ve always looked for ways to improve what’s been in front of me - processes, communication, culture, and now, websites.</p>
-          <p>Outside of the coding life I enjoy playing the guitar and making music, building/tinkering with things, or a fun and possibly over-competitive board game with the family. 
-            Speaking of, I have the pleasure of chasing around seven awesome and rambunctious kiddos with my lovely and all too patient wife Amber.</p>
-          <p class="about-tag">Let’s build something great together!</p>
+        <div class="about-description"> -->
+          <p>
+            I live in Northwest OKC with my wife Amber where we raise our seven kids. I enjoy playing the guitar and learning how people and things work. 
+            We love a good board game (or video game), playing LEGO, the neighborhood pool in the summer, family movie nights, and being loud. 
+            Most of all, we strive to live our lives in apprenticeship to Jesus, embracing the fullness of life He has to offer.          </p>
         </div>
       </div>
 
       <div class="dev-icons-wrapper center">
+
         <div class="dev-img">
           <img src="img/icons/html5.png" alt="HTML5 Icon" class="icon-item"/>
         </div>
@@ -78,11 +81,19 @@
         <div class="dev-img">
           <img src="img/icons/node.png" alt="Node Icon" class="icon-item"/>
         </div>
+        
+        <div class="dev-img">
+          <img src="img/icons/express.png" alt="Express Icon" class="icon-item"/>
+        </div>
 
         <div class="dev-img">
           <img src="img/icons/npm.png" alt="NPM Icon" class="icon-item"/>
         </div>
-      
+
+        <div class="dev-img">
+          <img src="img/icons/mongoDB.png" alt="MongoDB Icon" class="icon-item"/>
+        </div>
+
         <div class="dev-img">
           <img src="img/icons/git.png" alt="Git Icon" class="icon-item"/>
         </div>
@@ -120,7 +131,8 @@
   
     <!-- Projects Section -->
     <section class="projects-section center" id="section-3">
-      <h2 class="section-heading">My Projects</h2>
+      <h2 class="section-heading">Projects</h2>
+      
       <div class="projects-wrapper center">
         <div class="project">
           <div class="project-text">
@@ -181,19 +193,19 @@
 
     <!-- Contact Section -->
     <section class="contact-section center" id="section-4">
-      <h2 class="section-heading">Contact Me</h2>
+      <h2 class="section-heading">Contact</h2>
       <script type="text/javascript">var submitted=false;</script>
       <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='thankyou.html';}"></iframe>
-      <form class="contact-form center" name="Form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScarZV7KKAm6AL6GzbhB0azdg6G6Gn3IVmjtCN0zxf7sLHdeQ/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+      <p id="statement">Let’s build something great together!</p>
+
+      <form class="contact-form center" name="Form" action="https://docs.google.com/forms/d/e/1FAIpQLSfYue4WdYQONI8uxbikye757i28XE2EyO5mttiaStyXpTJ3rg/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
         <input type="text" name="entry.2005620554" placeholder="Name" required>
         <input type="email" name="entry.1045781291" placeholder="Email" required>
-        <textarea name="entry.839337160" placeholder="What do you want to create?" required></textarea>
+        <textarea name="entry.1065046570" placeholder="What do you want to create?" required></textarea>
         <!--fields to combat bots-->
         <label class="bot">Let me know you're a real human and not a robot by answering this simple question.</label>
-        <input name="entry.1100990297" placeholder="A panda is black and _____?" required></input>
+        <input name="entry.667527348" placeholder="A panda is black and _____?" required></input>
         <input type="submit" class="contact-button" value="send">
-        </form>
-
       </form>
     </section>
     <!-- End of Contact Section -->
@@ -206,7 +218,7 @@
       </div>
 
       <p class="copyright center">Copyright: &copy; <script>document.write(new Date().getFullYear())</script> Jon Hocker. All Rights Reserved.</p>
-        <img src="img/icons/jh-logo-white.png" alt="JH Logo" class="logo">
+      <img src="img/icons/jh-logo-white.png" alt="JH Logo" class="logo">
     </footer>
     <!-- End of Footer -->
   </div>

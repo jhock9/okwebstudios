@@ -1,32 +1,26 @@
-// const navbar = document.querySelector(".navbar");
-// const navbarOffsetTop = navbar.offsetTop;
 const sections = document.querySelectorAll("section");
-const navbarLinks = document.querySelectorAll(".navbar-link");
+const navbarLinks = document.querySelector(".navbar-link");
+const form = document.querySelector(".contact-form");
 
 window.addEventListener("scroll", () => {
-  mainFunction ();
+  scrollHandler();
 });
 
-const mainFunction = () => {
-//   if (window.pageYOffset >= navbar.offsetTop){
-//     navbar.classList.add("sticky")
-//   } else {
-//     navbar.classList.remove("sticky");
-//   };
-    
-  sections.forEach(function (section, i) {
+const scrollHandler = () => {
+  sections.forEach((section, i) => {
     if (window.pageYOffset >= section.offsetTop - 10) {
-      // for (let navbarLink of navbarLinks) {
-      //   navbarLink.classList.remove ('change');
-      // }
-      navbarLinks.forEach(function (navbarLink) {
-        navbarLink.classList.remove ('change');
+      navbarLinks.forEach((navbarLink) => {
+        navbarLink.classList.remove('change');
       });
       navbarLinks[i].classList.add('change');
     }
   });
 };
 
-// window.addEventListener('resize' ()=> {
-//   window.location.reload();
-// });
+form.addEventListener('submit', (event) => {
+  var answer = document.querySelector('input[name="entry.667527348"]').value.toLowerCase();
+  if (answer !== 'white') {
+    alert('Try again robot!');
+    event.preventDefault();
+  }
+});

@@ -49,7 +49,7 @@ section {
 
 /* ----- Hero Section ----- */
 .hero-section {
-  height: 100vh;
+  height: calc(100vh - 4.2rem);
   background: linear-gradient(
     rgba(255,255,255, .2),
     rgba(255,255,255, .3)), 
@@ -64,7 +64,7 @@ section {
   color: #fff;
   background-color: #15B3A6;
   padding: 0 3rem;
-  margin: 0 0 5rem 0;
+  margin: 0 0 8rem 0;
   text-transform: uppercase;
   letter-spacing: 1rem;
   border-bottom: 0.3rem solid #fff;
@@ -92,7 +92,6 @@ section {
   border-radius: 50%;
   border: .7rem dotted #15b3a6;
   background-color: rgba(255,255,255, .7);
-  /* padding: 0.5rem; */
   opacity: .9;
 }
 
@@ -101,35 +100,22 @@ section {
   color: #fff;
   background-color: #15B3A6;
   padding: 0.5rem 3rem;
-  margin: 5rem 0;
+  margin: 8rem 0;
   letter-spacing: 0.3rem;
   transform: skew(-10deg);
-}
-
-.hero-button,
-.thanks-button {
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: #333;
-  background-color: #fff;
-  border: .5rem solid #333;
-  padding: 0.5rem 1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.3rem;
 }
 
 /* ----- End of Hero Section ----- */
 
 /* ----- Navbar ----- */
 .navbar {
-width: 100%;
-padding: 1rem 0;
-background-color: #15B3A6;
-box-shadow: 0.2rem 0.2rem 0.5rem #555;
-position: sticky;
-top: 0;
-z-index: 15;
-/* flex-direction: column; */
+  width: 100%;
+  padding: 1rem 0;
+  background-color: #15B3A6;
+  box-shadow: 0.2rem 0.2rem 0.5rem #555;
+  position: sticky;
+  top: 0;
+  z-index: 15;
 }
 
 .navbar-link {
@@ -192,17 +178,6 @@ z-index: 15;
   text-align: justify;
 }
 
-.about-description .about-tag {
-  font-size: 2rem;
-  font-weight: 600;
-  color: #15B3A6;
-  text-align: center;
-  text-transform: uppercase;
-  font-style: italic;
-  letter-spacing: .5rem;
-  text-shadow: 0.1rem 0.1rem 0.05rem #999;
-}
-
 .dev-icons-wrapper {
   width: 90%;
   flex-flow: row wrap;
@@ -220,7 +195,6 @@ z-index: 15;
 .dev-icon i {
   font-size: 5rem;
   color: #15B3A6;
-  /* text-shadow: 0.1rem 0.1rem 0.15rem #555; */
 }
 
 .icon-item {
@@ -241,16 +215,16 @@ z-index: 15;
 }
 
 .project {
-margin: 1rem;
-background-color: #fff;
-box-shadow: 0.3rem 0.3rem 0.5rem #777;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-position: relative;
-overflow: hidden;
-transition: box-shadow 0.5s;
+  margin: 1rem;
+  background-color: #fff;
+  box-shadow: 0.3rem 0.3rem 0.5rem #777;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.5s;
 }
 
 .project:hover {
@@ -326,6 +300,19 @@ transition: box-shadow 0.5s;
   text-shadow: none;
 }
 
+.contact-section #statement {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: .5rem;
+  text-shadow: 0.1rem 0.1rem 0.05rem #15B3A6;
+  max-width: 80%;
+  padding-bottom: 2rem;
+}
+
 .contact-form {
   width: 80%;
   max-width: 50rem;
@@ -344,9 +331,9 @@ transition: box-shadow 0.5s;
 }
 
 .contact-form textarea {
-min-height: 25rem;
-max-width: 100%;
-min-width: 100%;
+  min-height: 25rem;
+  max-width: 100%;
+  min-width: 100%;
 }
 
 .bot {
@@ -430,37 +417,20 @@ color: #fff;
 }
 
 .thanks-button {
-  border-color:#15B3A6;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #333;
+  background-color: #fff;
+  border: .5rem solid #15B3A6;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
 }
 /* ----- End of Thank You Page ----- */
 
 /* ==========================================================================
   Media Queries for Responsive Design
   ========================================================================== */
-  
-@media screen and (max-width: 350px) {
-  /**** SMALL MOBILE STYLES ****/
-
-  .hero-section {
-    height: initial;
-  }  
-
-  .hero-heading {
-    font-size: 3rem;
-  }
-
-  .navbar {
-    flex-direction: column;
-  }
-      
-  .navbar-link {
-      padding: .5rem;
-  }
-
-  .navbar-link::before {
-    bottom: 0.3rem;
-  }
-}
 
 @media screen and (min-width: 768px) {
   /**** TABLET STYLES ****/
@@ -468,17 +438,19 @@ color: #fff;
   html {
     font-size: 62.5%; /* setting default font size to 10px */
   }
+
   .section-heading {
     font-size: 5rem;
   } 
 
   .hero-section {
-    height: initial;
-  }  
+    height: calc(100vh - 4.5rem);
+  }
 
   .hero-heading,
   .thanks-heading {
     font-size: 5rem;
+    margin: 5rem 0;
   }
 
   #not-mobile {
@@ -492,6 +464,7 @@ color: #fff;
 
   .person-name {
     font-size: 2rem;
+    margin: 5rem 0;
   }
 
   .navbar-link {
@@ -511,10 +484,6 @@ color: #fff;
     margin-bottom: 3rem;
   }
 
-  .about-description .about-tag {
-    font-size: 1.5rem;
-  }
-  
   .dev-icon i {
     font-size: 6rem;
   }
@@ -524,11 +493,15 @@ color: #fff;
   }
 
   .project {
-  width: 47%;
+    width: 47%;
   }
 
   .contact-section {
     padding: 10rem 0;
+  }
+
+  .contact-section #statement {
+    font-size: 1.5rem;
   }
 
   .contact-form input, 
@@ -549,10 +522,6 @@ color: #fff;
 @media screen and (min-width: 1200px) {
   /**** DESKTOP STYLES ****/
 
-  .hero-section {
-  height: 100vh;
-  }
-
   .hero-heading,
   .thanks-heading {
     font-size: 6rem;
@@ -564,24 +533,13 @@ color: #fff;
   }
 
   .about-wrapper {
-  margin-bottom: 5rem;
+    margin-bottom: 5rem;
   }
 
   .about-description {
-    width: 42%;
+    width: 70%;
     font-size: 2rem;
   }
-
-  .about-description p {
-    margin-bottom: 2rem;
-  }
-
-  .about-description .about-tag {
-    font-size: 1.5rem;
-    text-align: left;
-    line-height: 2rem;
-  }
-  
 
   .dev-icon,
   .dev-img {
@@ -602,9 +560,18 @@ color: #fff;
     width: auto;
   }
 
+  .contact-section #statement {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .contact-form input, 
   .contact-form textarea {
     font-size: 1.5rem;
+  }
+
+  .contact-form textarea {
+    min-height: 20rem;
   }
 
   .thanks-section {
@@ -612,8 +579,8 @@ color: #fff;
   }
 
   .thanks-wrapper {
-  justify-content: space-around;
-  flex-flow: row wrap;
+    justify-content: space-around;
+    flex-flow: row wrap;
   }
 
   .thanks-text,
