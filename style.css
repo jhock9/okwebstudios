@@ -50,10 +50,11 @@ section {
 /* ----- Hero Section ----- */
 .hero-section {
   height: calc(100vh - 4.2rem);
-  background: linear-gradient(
-    rgba(255,255,255, .2),
-    rgba(255,255,255, .3)), 
-    url(../img/bg.png) center no-repeat;
+  background: 
+    linear-gradient(
+    rgba(238, 238, 255, .2),
+    rgba(238, 238, 255, .4)), 
+    url(img/bg.png) center no-repeat;
   background-size: cover;
 }
 
@@ -90,15 +91,16 @@ section {
   height: 25rem;
   object-fit: cover;
   border-radius: 50%;
-  border: .7rem dotted #15b3a6;
+  border: .3rem solid #fff;
   background-color: rgba(255,255,255, .7);
-  opacity: .9;
+  /* opacity: .9; */
 }
 
 .person-name {
   font-size: 2rem;
   color: #fff;
   background-color: #15B3A6;
+  border: .3rem solid #fff;
   padding: 0.5rem 3rem;
   margin: 8rem 0;
   letter-spacing: 0.3rem;
