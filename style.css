@@ -15,10 +15,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.hide {
-  display: none;
-}
-
 .center {
   display: flex;
   justify-content: center;
@@ -26,7 +22,7 @@ html {
 }
 
 section {
-  padding: 10rem 0;
+  padding: 8rem 0;
   background-color: #fff;
   flex-direction: column;
 }
@@ -36,7 +32,7 @@ section {
   color: #333;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  margin-bottom: 10rem;
+  margin-bottom: 6rem;
   border-bottom: 0.3rem solid #333;
   text-shadow: 0.2rem 0.2rem 0.5rem #555;
 }
@@ -93,7 +89,6 @@ section {
   border-radius: 50%;
   border: .3rem solid #fff;
   background-color: rgba(255,255,255, .7);
-  /* opacity: .9; */
 }
 
 .person-name {
@@ -217,6 +212,8 @@ section {
 }
 
 .project {
+  max-width: 40rem;
+  max-height: 25rem;
   margin: 1rem;
   background-color: #fff;
   box-shadow: 0.3rem 0.3rem 0.5rem #777;
@@ -304,14 +301,9 @@ section {
 
 .contact-section #statement {
   font-size: 2rem;
-  font-weight: 600;
-  color: #fff;
+  color: #15B3A6;
   text-align: center;
-  text-transform: uppercase;
-  font-style: italic;
   letter-spacing: .5rem;
-  text-shadow: 0.1rem 0.1rem 0.05rem #15B3A6;
-  max-width: 80%;
   padding-bottom: 2rem;
 }
 
@@ -367,7 +359,7 @@ section {
 }
 
 .social-media {
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .social-icon {
@@ -383,13 +375,30 @@ font-size: 4rem;
 color: #fff;
 }
 
-.copyright {
+.resume {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #15B3A6;
+  background-color: #333;
+  border: .3rem solid #15B3A6;
+  border-radius: .5rem;
+  padding: 0.5rem 3rem;
+  margin-bottom: 5rem;
+  letter-spacing: 0.3rem;
+}
+
+.copyright-wrapper {
   font-size: 1.5rem;
   font-weight: 300;
   color: #fff;
   text-transform: capitalize;
   letter-spacing: 0.2rem;
   text-align: center;
+  flex-direction: column;
+}
+
+.copyright {
   margin-bottom: 2rem;
 }
 
@@ -498,12 +507,14 @@ color: #fff;
     width: 47%;
   }
 
-  .contact-section {
-    padding: 10rem 0;
+  .contact-section #statement {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    padding-bottom: 1rem;
   }
 
-  .contact-section #statement {
-    font-size: 1.5rem;
+  .contact-section #statement br {
+    display: none;
   }
 
   .contact-form input, 
@@ -560,11 +571,6 @@ color: #fff;
 
   .project {
     width: auto;
-  }
-
-  .contact-section #statement {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 
   .contact-form input, 
