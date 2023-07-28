@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋, I'm Jon Hocker</h1>
+<h1 align="center">Hi 👋 I'm Jon Hocker</h1>
 <h3 align="center">Dedicated Web Developer from OKC blending people-oriented skills with a knack for creating clean, functional, and visually captivating websites.</h3>
 
 - 🔭 I’m currently working on [Interactive Flash Cards app for ABA-OK](https://www.abaco-op.org/)
