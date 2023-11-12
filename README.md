@@ -1,9 +1,10 @@
-<h1 align="center">Hi 👋 I'm Jon Hocker</h1>
-<h3 align="center">Dedicated Web Developer from OKC blending people-oriented skills with a knack for creating clean, functional, and visually captivating websites.</h3>
+<h1 align="center">This is OK Web Studios 👋</h1>
 
-- 🔭 I’m currently working on [Interactive Flashcards App for ABA Co-op](https://www.abaco-op.org/)
+<h3 align="center">Welcome to OK Web Studios! We're all about crafting clean, user-friendly websites and apps that look great and work even better. With a mix of top-notch tech skills and a friendly touch, we make sure every project knocks your socks off.</h3>
 
-- 🌱 I’m currently learning **React**
+- 🔭 Currently working on an amazing web application to help serve the behavioral health field. 
+
+- 🌱 Constantly learning new languages, frameworks, or libraries and staying up-to-date with the latest trends in tech.
 
 - 👨‍💻 All of my projects are available at [www.okwebstudios.com](www.okwebstudios.com)
 
