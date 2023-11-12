@@ -142,13 +142,13 @@ section {
 }
 
 .about-heading {
-  margin: 0 0 6rem 0;
+  margin-bottom: 6rem;
 }
 
 .thanks-heading {
   font-size: 5rem;
   border-bottom: none;
-  margin: 0 0 8rem 0;
+  margin-bottom: 8rem;
 }
 
 #not-mobile {
@@ -462,12 +462,15 @@ color: #fff;
     margin: 0 3rem;
   }
   
+  .about-section {
+    padding-top: 4rem;
+  } 
+  
   .about-heading,
   .thanks-heading {
     font-size: 5rem;
     margin: 5rem 0;
   }
-  
   #not-mobile {
     display: initial;
   }
@@ -489,6 +492,10 @@ color: #fff;
     margin-bottom: 3rem;
   }
   
+  .dev-icons-wrapper {
+    width: 70%;
+  }
+
   .dev-icon i {
     font-size: 6rem;
   }
@@ -529,18 +536,30 @@ color: #fff;
 @media screen and (min-width: 1200px) {
   /**** DESKTOP STYLES ****/
   
+  .about-section {
+    padding-top: 2rem;
+  } 
+  
   .about-heading,
   .thanks-heading {
     font-size: 6rem;
   }
   
+  .about-heading {
+    margin-bottom: 6rem;
+  }
+
   .about-wrapper {
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
   }
   
   .about-description {
-    width: 70%;
+    width: 80%;
     font-size: 2rem;
+  }
+  
+  .dev-icons-wrapper {
+    width: 80%;
   }
   
   .dev-icon,
