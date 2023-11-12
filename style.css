@@ -1,4 +1,5 @@
 /* ----- Reset and Common Styles ----- */
+
 *{
   margin: 0;
   padding: 0;
@@ -7,6 +8,12 @@
   text-decoration: none;
   list-style-type: none;
   font-weight: 400;
+}
+
+@font-face {
+  font-family: "Neoneon";
+  src: url("/assets/fonts/Neoneon.woff") format("woff"), 
+    url("https://db.onlinewebfonts.com/c/8174214b59c74c684285ae6b35662282?family=Neoneon") format("woff");
 }
 
 html,
@@ -144,7 +151,7 @@ section {
 
 .about-heading {
   margin-bottom: 6rem;
-  font-family: "Neoneon";
+  font-family: 'Neoneon', 'Jost', sans-serif;
   font-size: 8rem;
   font-weight: 400;
   color: #15B3A6;
