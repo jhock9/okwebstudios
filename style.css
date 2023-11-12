@@ -23,12 +23,6 @@ html {
 }
 
 body {
-  font-family: "Mulish", sans-serif;
-  color: var(--black);
-  font-size: 2rem;
-  background-color: var(--white);
-}
-body {
   outline: none;
   box-sizing: border-box;
   text-decoration: none;
@@ -50,7 +44,7 @@ section {
 }
 
 .section-heading {
-  font-size: 4rem;
+  font-size: 5rem;
   color: #333;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
@@ -59,6 +53,20 @@ section {
   text-shadow: 0.2rem 0.2rem 0.5rem #555;
 }
 
+@keyframes flicker {
+  0% {
+    opacity: 0.90;
+  }
+  40% {
+    opacity: 0.95;
+  }
+  65% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.90;
+  }
+}
 /* ----- End of Reset and Common Styles ----- */
 
 /* ==========================================================================
@@ -79,7 +87,7 @@ section {
 .navbar-link {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #333;
+  color: #fff;
   margin: 0 1.5rem;
   text-transform: uppercase;
   text-align: center;
@@ -89,18 +97,18 @@ section {
 }
 
 .change.navbar-link {
-  color: #fff;
+  color: #333;
 }
 
 .navbar-link:hover {
-  color: #fff;
+  color: #333;
 }
 
 .navbar-link::before {
   content: "";
   width: 0;
   height: 0.2rem;
-  background-color: #fff;
+  background-color: #333;
   position: absolute;
   right: -15%;
   bottom: -0.3rem;
@@ -121,7 +129,7 @@ section {
   padding-top: 8rem;
   background: 
     linear-gradient(
-    rgba(238, 238, 255, .3),
+    rgba(238, 238, 255, .2),
     rgba(238, 238, 255, .1)), 
     url(assets/img/bg.png) center no-repeat;
   background-size: cover;
@@ -129,26 +137,32 @@ section {
 
 .about-heading,
 .thanks-heading {
-  font-size: 5rem;
   font-weight: 700;
-  color: #fff;
-  background-color: #15B3A6;
-  padding: 0 3rem;
   text-transform: uppercase;
-  letter-spacing: 1rem;
-  border-bottom: 0.3rem solid #fff;
-  text-shadow: 0.2rem 0.2rem 1rem #555;
-  transform: skew(-10deg);
+  letter-spacing: 0.5rem;
 }
 
 .about-heading {
   margin-bottom: 6rem;
+  font-family: "Neoneon";
+  font-size: 8rem;
+  font-weight: 400;
+  color: #15B3A6;
+  text-shadow: 0 0 1rem #15B3A6, 0 0 3rem #15B3A6, 0 0 4rem #15B3A6; /* Neon glow effect */
+  animation: flicker 1s infinite alternate; /* Neon flicker animation */
 }
 
 .thanks-heading {
   font-size: 5rem;
+  letter-spacing: 1rem;
   border-bottom: none;
   margin-bottom: 8rem;
+  padding: 0 3rem;
+  color: #fff;
+  background-color: #15B3A6;
+  border-bottom: 0.3rem solid #fff;
+  text-shadow: 0.2rem 0.2rem 1rem #555;
+  transform: skew(-10deg);
 }
 
 #not-mobile {
@@ -471,6 +485,7 @@ color: #fff;
     font-size: 5rem;
     margin: 5rem 0;
   }
+  
   #not-mobile {
     display: initial;
   }
@@ -540,15 +555,14 @@ color: #fff;
     padding-top: 2rem;
   } 
   
-  .about-heading,
-  .thanks-heading {
-    font-size: 6rem;
+  .about-heading {
+    font-size: 10rem;
   }
   
   .about-heading {
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
   }
-
+  
   .about-wrapper {
     margin-bottom: 2rem;
   }
