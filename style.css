@@ -6,13 +6,35 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
-  font-family: 'Jost', sans-serif;
   font-weight: 400;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 html {
   font-size: 50%; /* setting default font size to 8px */
   scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  color: var(--black);
+  font-size: 2rem;
+  background-color: var(--white);
+}
+body {
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
 }
 
 .center {
@@ -22,7 +44,7 @@ html {
 }
 
 section {
-  padding: 8rem 0;
+  padding: 6rem 0;
   background-color: #fff;
   flex-direction: column;
 }
@@ -43,67 +65,6 @@ section {
   Mobile Styles
   ========================================================================== */
 
-/* ----- Hero Section ----- */
-.hero-section {
-  height: calc(100vh - 4.2rem);
-  background: 
-    linear-gradient(
-    rgba(238, 238, 255, .2),
-    rgba(238, 238, 255, .4)), 
-    url(assets/img/bg.png) center no-repeat;
-  background-size: cover;
-}
-
-.hero-heading,
-.thanks-heading {
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: #fff;
-  background-color: #15B3A6;
-  padding: 0 3rem;
-  margin: 0 0 8rem 0;
-  text-transform: uppercase;
-  letter-spacing: 1rem;
-  border-bottom: 0.3rem solid #fff;
-  text-shadow: 0.2rem 0.2rem 1rem #555;
-  transform: skew(-10deg);
-}
-
-.thanks-heading {
-  font-size: 3.5rem;
-  border-bottom: none;
-}
-
-#not-mobile {
-  display: none;
-}
-
-#mobile-top {
-  margin-bottom: 2rem;
-}
-
-.person-img {
-  width: 25rem;
-  height: 25rem;
-  object-fit: cover;
-  border-radius: 50%;
-  border: .3rem solid #fff;
-  background-color: rgba(255,255,255, .7);
-}
-
-.person-name {
-  font-size: 2rem;
-  color: #fff;
-  background-color: #15B3A6;
-  border: .3rem solid #fff;
-  padding: 0.5rem 3rem;
-  margin: 8rem 0;
-  letter-spacing: 0.3rem;
-  transform: skew(-10deg);
-}
-
-/* ----- End of Hero Section ----- */
-
 /* ----- Navbar ----- */
 .navbar {
   width: 100%;
@@ -112,15 +73,16 @@ section {
   box-shadow: 0.2rem 0.2rem 0.5rem #555;
   position: sticky;
   top: 0;
-  z-index: 15;
+  z-index: 2;
 }
 
 .navbar-link {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 600;
   color: #333;
   margin: 0 1.5rem;
   text-transform: uppercase;
+  text-align: center;
   letter-spacing: 0.3rem;
   position: relative;
   transition: color 0.2s;
@@ -155,6 +117,48 @@ section {
 /* ----- End of Navbar ----- */
 
 /* ----- About Section ----- */
+.about-section {
+  padding-top: 8rem;
+  background: 
+    linear-gradient(
+    rgba(238, 238, 255, .3),
+    rgba(238, 238, 255, .1)), 
+    url(assets/img/bg.png) center no-repeat;
+  background-size: cover;
+}
+
+.about-heading,
+.thanks-heading {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: #15B3A6;
+  padding: 0 3rem;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  border-bottom: 0.3rem solid #fff;
+  text-shadow: 0.2rem 0.2rem 1rem #555;
+  transform: skew(-10deg);
+}
+
+.about-heading {
+  margin: 0 0 6rem 0;
+}
+
+.thanks-heading {
+  font-size: 5rem;
+  border-bottom: none;
+  margin: 0 0 8rem 0;
+}
+
+#not-mobile {
+  display: none;
+}
+
+#mobile-top {
+  margin-bottom: 2rem;
+}
+
 .about-wrapper {
   width: 90%;
   display: flex;
@@ -164,8 +168,8 @@ section {
 
 .about-description {
   width: 90%;
-  font-size: 2rem;
-  color: #333;
+  font-size: 2.2rem;
+  color: #eee;
   display: flex;
   flex-direction: column;  
 }
@@ -197,21 +201,20 @@ section {
 .icon-item {
   width: 4.5rem;
 }
-
 /* ----- End of About Section ----- */
 
-/* ----- Projects Section ----- */
-.projects-section {
+/* ----- Portfolio Section ----- */
+.portfolio-section {
   background-color: #eef;
   flex-direction: column;
 }
 
-.projects-wrapper {
+.portfolio-wrapper {
   width: 90%;
   flex-wrap: wrap;
 }
 
-.project {
+.portfolio {
   max-width: 40rem;
   max-height: 25rem;
   margin: 1rem;
@@ -226,11 +229,11 @@ section {
   transition: box-shadow 0.5s;
 }
 
-.project:hover {
+.portfolio:hover {
   box-shadow: 1rem 1rem 1rem #777;
 }
 
-.project-text {
+.portfolio-text {
   text-align: center;
   letter-spacing: 0.1rem;
   position: absolute;
@@ -238,36 +241,36 @@ section {
   z-index: 10;
 }
 
-.project:hover .project-text {
+.portfolio:hover .portfolio-text {
   top: 5rem;
   transition: top 0.3s 0.3s;
 }
 
-.project-name {
+.portfolio-name {
   font-size: 3rem;
   font-weight: 700;
   color: #333;
   text-transform: capitalize;
 }
 
-.project-tech {
+.portfolio-tech {
   font-size: 1.8rem;
   font-weight: 500;
   color: #15B3A6;
 }
 
-.project-img {
+.portfolio-img {
   width: 40rem;
   height: 25rem;
   object-fit: cover;
   transition: opacity 0.3s;
 }
 
-.project:hover .project-img {
+.portfolio:hover .portfolio-img {
   opacity: 0.2;
 }
 
-.project-button {
+.portfolio-button {
   font-size: 1.8rem;
   font-weight: 500;
   color: #333;
@@ -281,11 +284,11 @@ section {
   bottom: -5rem;
 }
 
-.project:hover .project-button {
+.portfolio:hover .portfolio-button {
   bottom: 5rem;
   transition: bottom 0.3s 0.3s;
 }
-/* ----- End of Projects Section ----- */
+/* ----- End of Portfolio Section ----- */
 
 /* ----- Contact Section ----- */
 .contact-section {
@@ -449,21 +452,22 @@ color: #fff;
   html {
     font-size: 62.5%; /* setting default font size to 10px */
   }
-
+  
   .section-heading {
     font-size: 5rem;
   } 
-
-  .hero-section {
-    height: calc(100vh - 4.5rem);
+  
+  .navbar-link {
+    font-size: 1.7rem;
+    margin: 0 3rem;
   }
-
-  .hero-heading,
+  
+  .about-heading,
   .thanks-heading {
     font-size: 5rem;
     margin: 5rem 0;
   }
-
+  
   #not-mobile {
     display: initial;
   }
@@ -472,21 +476,11 @@ color: #fff;
   #mobile-bottom {
     display: none;
   }
-
-  .person-name {
-    font-size: 2rem;
-    margin: 5rem 0;
-  }
-
-  .navbar-link {
-    font-size: 1.7rem;
-    margin: 0 3rem;
-  }
-
+  
   .about-wrapper {
     margin-bottom: 3rem;
   }
-
+  
   .about-description {
     font-size: 1.8rem;
   }
@@ -494,7 +488,7 @@ color: #fff;
   .about-description p {
     margin-bottom: 3rem;
   }
-
+  
   .dev-icon i {
     font-size: 6rem;
   }
@@ -502,31 +496,31 @@ color: #fff;
   .icon-item {
     width: 5.3rem;
   }
-
-  .project {
+  
+  .portfolio {
     width: 47%;
   }
-
+  
   .contact-section #statement {
     font-size: 1.8rem;
     line-height: 2rem;
     padding-bottom: 1rem;
   }
-
+  
   .contact-section #statement br {
     display: none;
   }
-
+  
   .contact-form input, 
   .contact-form textarea {
     margin: 0.5rem 0;
     font-size: 1.8rem;
   }
-
+  
   .footer-wrapper {
     padding: 5rem 0;
   }
-
+  
   .dance-gif {
     width: 50%;
   }
@@ -534,33 +528,28 @@ color: #fff;
 
 @media screen and (min-width: 1200px) {
   /**** DESKTOP STYLES ****/
-
-  .hero-heading,
+  
+  .about-heading,
   .thanks-heading {
     font-size: 6rem;
   }
   
-  .hero-button {
-    font-size: 1.7rem;
-    border: 0.3rem solid #333;
-  }
-
   .about-wrapper {
     margin-bottom: 5rem;
   }
-
+  
   .about-description {
     width: 70%;
     font-size: 2rem;
   }
-
+  
   .dev-icon,
   .dev-img {
     max-width: 10rem;
     padding: 0 3rem;
     margin: 2rem 3rem;
   }
-
+  
   .dev-icon i {
     font-size: 10rem;
   }
@@ -568,34 +557,34 @@ color: #fff;
   .icon-item {
     width: 9rem;
   }
-
-  .project {
+  
+  .portfolio {
     width: auto;
   }
-
+  
   .contact-form input, 
   .contact-form textarea {
     font-size: 1.5rem;
   }
-
+  
   .contact-form textarea {
     min-height: 20rem;
   }
-
+  
   .thanks-section {
     padding-top: 5rem;
   }
-
+  
   .thanks-wrapper {
     justify-content: space-around;
     flex-flow: row wrap;
   }
-
+  
   .thanks-text,
   .gif-wrapper {
     width: 45%;
   }
-
+  
   .dance-gif {
     width: 60%;
   }  
