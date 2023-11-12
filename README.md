@@ -1,33 +1,15 @@
 <h1 align="center">Hi 👋 I'm Jon Hocker</h1>
 <h3 align="center">Dedicated Web Developer from OKC blending people-oriented skills with a knack for creating clean, functional, and visually captivating websites.</h3>
 
-- 🔭 I’m currently working on [Interactive Flash Cards app for ABA-OK](https://www.abaco-op.org/)
+- 🔭 I’m currently working on [Interactive Flashcards App for ABA Co-op](https://www.abaco-op.org/)
 
-- 🌱 I’m currently learning **React, MongoDB**
+- 🌱 I’m currently learning **React**
 
-- 👨‍💻 All of my projects are available at [www.jonhocker.com](www.jonhocker.com)
+- 👨‍💻 All of my projects are available at [www.okwebstudios.com](www.okwebstudios.com)
 
-- 📫 How to reach me **jon.hocker@gmail.com**
+- 📫 How to reach me **okwebstudios@gmail.com**
 
-- 📄 Know about my experiences [https://www.linkedin.com/in/jonhocker/](https://www.linkedin.com/in/jonhocker/)
-
-- ⚡ Fun fact **I have seven...yes...seven kids.**
-
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-  <a href="https://codepen.io/4zero5" target="blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" alt="4zero5" height="30" width="40" /></a>
-  <a href="https://dev.to/jhock9" target="blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg" alt="jhock9" height="30" width="40" /></a>
-  <a href="https://twitter.com/4zero5_eth" target="blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="4zero5_eth" height="30" width="40" /></a>
-  <a href="https://linkedin.com/in/jonhocker" target="blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="jonhocker" height="30" width="40" /></a>
-  <a href="https://codesandbox.com/jhock9" target="blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codesandbox.svg" alt="jhock9" height="30" width="40" /></a>
-  <a href="https://instagram.com/4zero5.eth" target="blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="4zero5.eth" height="30" width="40" /></a>
-</p>
+- 🔗 Connect with me at [https://www.linkedin.com/in/jonhocker/](https://www.linkedin.com/in/jonhocker/)
 
 <h3 align="left">Languages and Tools:</h3>
 <p align="left"> 
@@ -49,4 +31,6 @@
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/></a> 
   <a href="https://webpack.js.org" target="_blank" rel="noreferrer"> 
     <img src="https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg" alt="webpack" width="40" height="40"/></a> 
+  <a href= "https://www.mongodb.com/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/></a> 
 </p>
