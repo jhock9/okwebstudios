@@ -420,7 +420,9 @@ color: #fff;
 }
 
 .logo {
-  width: 5rem;
+  width: 20rem;
+  margin: 0;
+  padding: 0;
 }
 
 /* ----- End of Footer Section ----- */
