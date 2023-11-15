@@ -60,20 +60,6 @@ section {
   text-shadow: 0.2rem 0.2rem 0.5rem #555;
 }
 
-@keyframes flicker {
-  0% {
-    opacity: 0.90;
-  }
-  40% {
-    opacity: 0.95;
-  }
-  65% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.90;
-  }
-}
 /* ----- End of Reset and Common Styles ----- */
 
 /* ==========================================================================
@@ -156,7 +142,22 @@ section {
   font-weight: 400;
   color: #15B3A6;
   text-shadow: 0 0 1rem #15B3A6, 0 0 3rem #15B3A6, 0 0 4rem #15B3A6; /* Neon glow effect */
-  animation: flicker 1s infinite alternate; /* Neon flicker animation */
+  animation: flicker 6s infinite alternate-reverse; /* Neon flicker animation */
+}
+
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 31%, 32%, 55%, 59%, 100% {
+    opacity: 1;
+  }
+  22%, 57% {
+    opacity: 0.95;
+  }
+  32%, 56% {
+    opacity: 0.87;
+  }
+  20% {
+    opacity: 0.8;
+  }
 }
 
 .thanks-heading {
@@ -494,6 +495,11 @@ color: #fff;
     font-size: 5rem;
     margin: 5rem 0;
   }
+    
+  .about-heading {
+    font-size: 8rem;
+    margin-bottom: 4rem;
+  }
   
   #not-mobile {
     display: initial;
@@ -505,7 +511,7 @@ color: #fff;
   }
   
   .about-wrapper {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
   
   .about-description {
@@ -565,15 +571,7 @@ color: #fff;
   } 
   
   .about-heading {
-    font-size: 10rem;
-  }
-  
-  .about-heading {
-    margin-bottom: 4rem;
-  }
-  
-  .about-wrapper {
-    margin-bottom: 2rem;
+    font-size: 8rem;
   }
   
   .about-description {
