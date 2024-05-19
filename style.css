@@ -124,7 +124,7 @@ section {
     linear-gradient(
     rgba(238, 238, 255, .2),
     rgba(238, 238, 255, .1)), 
-    url(assets/img/bg.png) center no-repeat;
+    url(assets/img/bg.webp) center no-repeat;
   background-size: cover;
 }
 
