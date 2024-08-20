@@ -1,5 +1,4 @@
-/* ----- Reset and Common Styles ----- */
-
+/* ============== BASE STYLES ============== */
 *{
   margin: 0;
   padding: 0;
@@ -60,12 +59,7 @@ section {
   text-shadow: 0.2rem 0.2rem 0.5rem #555;
 }
 
-/* ----- End of Reset and Common Styles ----- */
-
-/* ==========================================================================
-  Mobile Styles
-  ========================================================================== */
-
+/* ============== MOBILE STYLES ============== */
 /* ----- Navbar ----- */
 .navbar {
   width: 100%;
@@ -115,7 +109,6 @@ section {
 .navbar-link:hover::before { 
   width: 130%;
 }
-/* ----- End of Navbar ----- */
 
 /* ----- About Section ----- */
 .about-section {
@@ -136,7 +129,6 @@ section {
 }
 
 .about-heading {
-  margin-bottom: 6rem;
   font-family: 'Neoneon', 'Jost', sans-serif;
   font-size: 8rem;
   font-weight: 400;
@@ -177,10 +169,6 @@ section {
   display: none;
 }
 
-#mobile-top {
-  margin-bottom: 2rem;
-}
-
 .about-wrapper {
   width: 90%;
   display: flex;
@@ -194,49 +182,25 @@ section {
   color: #eee;
   display: flex;
   flex-direction: column;  
-}
-
-.about-description p {
-  margin-bottom: 5rem;
   text-align: justify;
 }
 
-.dev-icons-wrapper {
-  width: 90%;
-  flex-flow: row wrap;
+.about-description p {
+  margin-top: 5rem;
 }
 
-.dev-icon,
-.dev-img {
-  max-width: 4rem;
-  padding: 0 2rem;
-  margin: 2rem 3rem;
-  display: flex;
-  justify-content: center;
-}
-
-.dev-icon i {
-  font-size: 5rem;
-  color: #15B3A6;
-}
-
-.icon-item {
-  width: 4.5rem;
-}
-/* ----- End of About Section ----- */
-
-/* ----- Portfolio Section ----- */
-.portfolio-section {
+/* ----- Examples Section ----- */
+.examples-section {
   background-color: #eef;
   flex-direction: column;
 }
 
-.portfolio-wrapper {
+.examples-wrapper {
   width: 90%;
   flex-wrap: wrap;
 }
 
-.portfolio {
+.examples {
   max-width: 40rem;
   max-height: 25rem;
   margin: 1rem;
@@ -251,11 +215,11 @@ section {
   transition: box-shadow 0.5s;
 }
 
-.portfolio:hover {
+.examples:hover {
   box-shadow: 1rem 1rem 1rem #777;
 }
 
-.portfolio-text {
+.examples-text {
   text-align: center;
   letter-spacing: 0.1rem;
   position: absolute;
@@ -263,36 +227,36 @@ section {
   z-index: 10;
 }
 
-.portfolio:hover .portfolio-text {
+.examples:hover .examples-text {
   top: 5rem;
   transition: top 0.3s 0.3s;
 }
 
-.portfolio-name {
+.examples-name {
   font-size: 3rem;
   font-weight: 700;
   color: #333;
   text-transform: capitalize;
 }
 
-.portfolio-tech {
+.examples-tech {
   font-size: 1.8rem;
   font-weight: 500;
   color: #15B3A6;
 }
 
-.portfolio-img {
+.examples-img {
   width: 40rem;
   height: 25rem;
   object-fit: cover;
   transition: opacity 0.3s;
 }
 
-.portfolio:hover .portfolio-img {
+.examples:hover .examples-img {
   opacity: 0.2;
 }
 
-.portfolio-button {
+.examples-button {
   font-size: 1.8rem;
   font-weight: 500;
   color: #333;
@@ -306,11 +270,10 @@ section {
   bottom: -5rem;
 }
 
-.portfolio:hover .portfolio-button {
+.examples:hover .examples-button {
   bottom: 5rem;
   transition: bottom 0.3s 0.3s;
 }
-/* ----- End of Portfolio Section ----- */
 
 /* ----- Contact Section ----- */
 .contact-section {
@@ -373,18 +336,13 @@ section {
   letter-spacing: 1rem;
   cursor: pointer;
 }
-/* ----- End of Contact Section ----- */
 
 /* ----- Footer Section ----- */
 .footer-wrapper {
   width: 100%;
-  padding: 5rem 0;
+  padding: 5rem 0 3rem 0;
   background: #222;
   flex-direction: column;
-}
-
-.social-media {
-  margin-bottom: 3rem;
 }
 
 .social-icon {
@@ -400,19 +358,6 @@ font-size: 4rem;
 color: #fff;
 }
 
-.resume {
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #15B3A6;
-  background-color: #333;
-  border: .3rem solid #15B3A6;
-  border-radius: .5rem;
-  padding: 0.5rem 3rem;
-  margin-bottom: 5rem;
-  letter-spacing: 0.3rem;
-}
-
 .copyright-wrapper {
   font-size: 1.5rem;
   font-weight: 300;
@@ -424,7 +369,7 @@ color: #fff;
 }
 
 .copyright {
-  margin-bottom: 2rem;
+  margin: 3rem 0;
 }
 
 .logo {
@@ -433,10 +378,7 @@ color: #fff;
   padding: 0;
 }
 
-/* ----- End of Footer Section ----- */
-
 /* ----- Thank You Page ----- */
-
 .thanks-wrapper {
   width: 80%;
   flex-direction: column;
@@ -464,15 +406,9 @@ color: #fff;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
 }
-/* ----- End of Thank You Page ----- */
 
-/* ==========================================================================
-  Media Queries for Responsive Design
-  ========================================================================== */
-
-@media screen and (min-width: 768px) {
-  /**** TABLET STYLES ****/
-  
+/* ============== TABLET STYLES ============== */
+@media screen and (min-width: 768px) {  
   html {
     font-size: 62.5%; /* setting default font size to 10px */
   }
@@ -489,16 +425,10 @@ color: #fff;
   .about-section {
     padding-top: 4rem;
   } 
-  
-  .about-heading,
-  .thanks-heading {
-    font-size: 5rem;
-    margin: 5rem 0;
-  }
-    
+
   .about-heading {
     font-size: 8rem;
-    margin-bottom: 4rem;
+    margin: 5rem 0 5rem 0;
   }
   
   #not-mobile {
@@ -510,31 +440,15 @@ color: #fff;
     display: none;
   }
   
-  .about-wrapper {
-    margin-bottom: 2rem;
-  }
-  
   .about-description {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   
   .about-description p {
-    margin-bottom: 3rem;
+    margin-top: 3rem;
   }
   
-  .dev-icons-wrapper {
-    width: 70%;
-  }
-
-  .dev-icon i {
-    font-size: 6rem;
-  }
-  
-  .icon-item {
-    width: 5.3rem;
-  }
-  
-  .portfolio {
+  .examples {
     width: 47%;
   }
   
@@ -558,14 +472,18 @@ color: #fff;
     padding: 5rem 0;
   }
   
+  .thanks-heading {
+    font-size: 5rem;
+    margin: 5rem 0;
+  }
+
   .dance-gif {
     width: 50%;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  /**** DESKTOP STYLES ****/
-  
+/* ============== DESKTOP STYLES ============== */
+@media screen and (min-width: 1200px) {  
   .about-section {
     padding-top: 2rem;
   } 
@@ -576,7 +494,6 @@ color: #fff;
   
   .about-description {
     width: 80%;
-    font-size: 2rem;
   }
   
   .dev-icons-wrapper {
@@ -598,7 +515,7 @@ color: #fff;
     width: 9rem;
   }
   
-  .portfolio {
+  .examples {
     width: auto;
   }
   
