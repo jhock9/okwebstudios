@@ -1,6 +1,6 @@
 <h1 align="center">This is OK Web Studios 👋</h1>
 
-<h3 align="center">Welcome to OK Web Studios! We're all about crafting clean, user-friendly websites and apps that look great and work even better. With a mix of top-notch tech skills and a friendly touch, we make sure every project knocks your socks off.</h3>
+<h3>Welcome to OK Web Studios! We're all about crafting clean, user-friendly websites and apps that look great and work even better. With a mix of top-notch tech skills and a friendly touch, we make sure every project knocks your socks off.</h3>
 
 - 🔭 Currently working on an amazing web application to help serve the behavioral health field. 
 
